@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christo Lotriet - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .portfolio-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      padding: 40px;
+    }
+    .portfolio-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .portfolio-header h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .portfolio-header p {
+      color: #555;
+      font-size: 1.1em;
+    }
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .project {
+      border-left: 5px solid #667eea;
+      padding: 20px 30px;
+      background: #f8f9fa;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(102,126,234,0.05);
+    }
+    .project-title {
+      font-size: 1.3em;
+      color: #34495e;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .project-meta {
+      font-size: 0.95em;
+      color: #888;
+      margin-bottom: 10px;
+    }
+    .project-description {
+      margin-bottom: 10px;
+    }
+    .project-links a {
+      color: #667eea;
+      text-decoration: none;
+      margin-right: 16px;
+      font-weight: 500;
+    }
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="portfolio-container">
+    <div class="portfolio-header">
+      <h1>Christo Lotriet</h1>
+      <p>
+        Senior Software Developer &mdash; Portfolio<br>
+        Showcasing selected personal and open-source projects.<br>
+        <a href="index.html" style="color:#667eea;">View CV</a>
+      </p>
+    </div>
+    <div class="project-list">
+      <!-- Example Project 1 -->
+      <div class="project">
+        <div class="project-title">Personal Finance Tracker</div>
+        <div class="project-meta">Web App &bull; 2024 &bull; React, Node.js, MongoDB</div>
+        <div class="project-description">
+          A full-stack web application for tracking personal expenses and income. Features user authentication, interactive charts, and exportable reports. Built to demonstrate modern web development and RESTful API design.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/lotriet/finance-tracker" target="_blank">Source Code</a>
+          <a href="https://finance-demo.lotriet.dev" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <!-- Example Project 2 -->
+      <div class="project">
+        <div class="project-title">QlikView Data Visualizations</div>
+        <div class="project-meta">Data Analytics &bull; 2023 &bull; QlikView, SQL</div>
+        <div class="project-description">
+          Created interactive dashboards for business intelligence, using anonymized sample data. Demonstrates advanced data modeling, ETL, and visualization techniques.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/lotriet/qlikview-demos" target="_blank">Source Code</a>
+        </div>
+      </div>
+      <!-- Example Project 3 -->
+      <div class="project">
+        <div class="project-title">Open Source Contributions</div>
+        <div class="project-meta">Various &bull; 2022-2025 &bull; GitHub</div>
+        <div class="project-description">
+          Contributed bug fixes, features, and documentation to several open-source projects, including .NET libraries and JavaScript utilities. See GitHub profile for details.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/lotriet" target="_blank">GitHub Profile</a>
+        </div>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </div>
+</body>
+</html>
