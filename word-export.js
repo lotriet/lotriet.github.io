@@ -4,7 +4,14 @@ function exportToWord() {
     "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export as Word</title></head><body>";
   var footer = "</body></html>";
   // Only export the main CV content
-  var content = document.querySelector(".cv-container").outerHTML;
+  // Clone the CV container to avoid modifying the live DOM
+  var cvContainer = document.querySelector(".cv-container").cloneNode(true);
+  // Add inline margin to each .job div for Word export spacing
+  var jobs = cvContainer.querySelectorAll('.job');
+  jobs.forEach(function(job) {
+    job.style.marginBottom = '32px';
+  });
+  var content = cvContainer.outerHTML;
   var sourceHTML = header + content + footer;
 
   var source =
