@@ -5,6 +5,7 @@ Copy and paste these as new issues in your GitHub repository:
 ## 🚀 Feature Issues
 
 ### Issue 1: Add Real Portfolio Projects
+
 ```
 Title: [FEATURE] Add real portfolio projects to showcase
 
@@ -36,6 +37,7 @@ Visitors need to see real examples of my work to understand my capabilities and 
 ```
 
 ### Issue 2: Implement Project Filtering
+
 ```
 Title: [FEATURE] Add project filtering by technology/category
 
@@ -68,6 +70,7 @@ Employers looking for specific skills can quickly find relevant projects.
 ## 📝 Content Issues
 
 ### Issue 3: Update Work Experience
+
 ```
 Title: [CONTENT] Update with latest work achievements and projects
 
@@ -98,6 +101,7 @@ Update the professional experience section with recent achievements and current 
 ```
 
 ### Issue 4: Add Project Screenshots
+
 ```
 Title: [CONTENT] Add project screenshots and visual examples
 
@@ -129,6 +133,7 @@ Add screenshots, mockups, or visual representations of projects to make the port
 ## 🐛 Bug Issues
 
 ### Issue 5: Mobile Responsiveness
+
 ```
 Title: [BUG] Export buttons overlap on small screens
 
@@ -161,6 +166,7 @@ Buttons may overlap content or be cut off on small screens.
 ## 🎨 Design Issues
 
 ### Issue 6: Skills Section Improvements
+
 ```
 Title: [DESIGN] Further optimize skills section layout
 

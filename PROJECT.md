@@ -37,6 +37,7 @@ This project tracks the development and maintenance of Christo Lotriet's profess
 ### 📊 Project Boards
 
 1. **Portfolio Development** - Main development board
+
    - 📋 Backlog
    - 🔄 In Progress
    - 👀 Review

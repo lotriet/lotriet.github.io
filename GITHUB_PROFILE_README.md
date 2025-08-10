@@ -23,6 +23,7 @@
 ## 💻 Tech Stack & Expertise
 
 ### 🔧 Languages & Frameworks
+
 <p align="left">
   <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"/>
   <img src="https://img.shields.io/badge/ASP.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="ASP.NET"/>
@@ -33,6 +34,7 @@
 </p>
 
 ### 🗄️ Databases & Data
+
 <p align="left">
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
   <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle"/>
@@ -41,6 +43,7 @@
 </p>
 
 ### 🛠️ Tools & DevOps
+
 <p align="left">
   <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white" alt="Visual Studio"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
@@ -96,16 +99,19 @@ timeline
 ## 🎯 Current Focus & Achievements
 
 ### 🏛️ **Government Technology**
+
 - 📋 **Public Records Management**: Building ASP.NET MVC systems for NC counties
 - 💳 **Payment Integration**: Secure tax payment processing for Sheriff departments
 - 🔒 **Security & Compliance**: Implementing audit trails and data validation
 
 ### ⚡ **Performance Optimization**
+
 - 🗄️ **MySQL Tuning**: Optimizing queries and stored procedures for county-scale data
 - 📈 **95% Performance Improvement**: Achieved through advanced threading and database optimization
 - 👥 **Team Mentoring**: Supporting colleagues with database and backend architecture
 
 ### 🌟 **Recent Projects**
+
 - ✅ Payment gateway integration with real estate & tangible property tax systems
 - ✅ Reporting & reconciliation systems eliminating manual spreadsheet processes
 - ✅ Accessibility improvements and mobile responsiveness enhancements
