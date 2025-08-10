@@ -1,0 +1,5 @@
+{
+  "EnvironmentName": "dev",
+  "ConnectionString": "server=localhost;port=3306;user=root;password=Password123!;database=perf_lab",
+  "Iterations": 5
+}
