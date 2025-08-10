@@ -8,7 +8,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #f5f5f5;
   min-height: 100vh;
   padding: 20px;
 }
@@ -155,35 +155,36 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
 }
 
 .skill-category {
   background: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
-  border-left: 5px solid #3498db;
+  padding: 12px;
+  border-radius: 5px;
+  border-left: 2px solid #3498db;
 }
 
 .skill-category h4 {
   color: #2c3e50;
-  margin-bottom: 10px;
-  font-size: 1.1em;
+  margin-bottom: 6px;
+  font-size: 0.95em;
+  font-weight: 600;
 }
 
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 4px;
 }
 
 .skill-tag {
   background: #3498db;
   color: white;
-  padding: 5px 12px;
-  border-radius: 15px;
-  font-size: 0.85em;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 0.75em;
   font-weight: 500;
 }
 
@@ -238,7 +239,7 @@ body {
 .pdf-export-btn,
 .word-export-btn {
   position: static;
-  background: #e74c3c;
+  background: #3498db;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -246,15 +247,15 @@ body {
   font-size: 0.9em;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
   transition: all 0.3s ease;
 }
 
 .pdf-export-btn:hover,
 .word-export-btn:hover {
-  background: #c0392b;
+  background: #2980b9;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
 }
 
 .pdf-export-btn:active,
