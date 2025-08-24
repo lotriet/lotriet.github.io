@@ -4,56 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christo Lotriet - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <style>
+      body {
+        font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont,
+          sans-serif;
+        background: #fafafa;
+      }
       .resume-container {
-        max-width: 900px;
-        margin: 40px auto;
+        max-width: 880px;
+        margin: 24px auto;
         background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        padding: 40px;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),
+          0 8px 24px rgba(0, 0, 0, 0.04);
+        border: 1px solid #e5e7eb;
+        padding: 48px 40px;
       }
       .resume-header {
         text-align: center;
-        margin-bottom: 32px;
+        margin-bottom: 48px;
       }
       .resume-header h1 {
-        font-size: 2.2em;
-        color: #2c3e50;
-        margin: 0 0 6px;
+        font-size: 2.25em;
+        color: #1f2937;
+        margin: 0 0 16px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
       }
       .resume-header p {
-        color: #555;
-        font-size: 1.05em;
+        color: #374151;
+        font-size: 1em;
         margin: 0;
+        font-weight: 400;
       }
       .resume-section {
-        margin-bottom: 28px;
+        margin-bottom: 40px;
       }
       .resume-section h2 {
-        color: #34495e;
-        font-size: 1.25em;
-        margin: 0 0 8px;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 3px;
+        color: #1f2937;
+        font-size: 1.5em;
+        margin: 0 0 24px;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 8px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        position: relative;
+      }
+      .resume-section h2::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 48px;
+        height: 2px;
+        background: #6366f1;
       }
       .resume-list,
       .achievements-list {
         margin: 0;
-        padding: 0 0 0 18px;
+        padding: 0 0 0 20px;
       }
       .resume-list li,
       .achievements-list li {
-        margin-bottom: 6px;
-        line-height: 1.3em;
+        margin-bottom: 8px;
+        line-height: 1.6;
+        color: #374151;
+        font-weight: 400;
       }
       .resume-links {
-        margin-top: 10px;
+        margin-top: 16px;
         text-align: center;
       }
       .resume-links a {
-        color: #667eea;
+        color: #6366f1;
         text-decoration: none;
         margin: 0 10px;
         font-weight: 500;
@@ -72,13 +102,13 @@
       <div class="resume-section">
         <h2>Summary</h2>
         <p>
-          Results‑driven Senior Developer (15+ yrs) specializing in
-          data‑intensive .NET / C# and SQL solutions for government records,
+          Results-driven Senior Developer (15+ yrs) specializing in
+          data-intensive .NET / C# and SQL solutions for government records,
           healthcare and financial platforms. Recent impact: modernized public
           records platform UX & performance and strengthened secure
           payment/document workflows. Current focus on MySQL performance and
           scalable stored procedure design. Operate effectively when formal
-          specifications are sparse by reverse‑engineering legacy code,
+          specifications are sparse by reverse-engineering legacy code,
           inspecting production data usage patterns and engaging stakeholders to
           surface and document business rules proactively.
         </p>
@@ -97,7 +127,7 @@
             spreadsheet prep.
           </li>
           <li>
-            Optimized high‑load SQL stored procedures (indexing & search) for
+            Optimized high-load SQL stored procedures (indexing & search) for
             improved peak load performance.
           </li>
           <li>
@@ -130,7 +160,7 @@
         <ul class="resume-list">
           <li>
             <strong>Web Developer</strong> &mdash; Courthouse Computer Systems,
-            NC, USA (2023‑Present)
+            NC, USA (2023-Present)
             <ul class="achievements-list">
               <li>
                 Develop & evolve ASP.NET MVC records modules (land, vital,
@@ -151,13 +181,13 @@
               </li>
               <li>
                 Support a teammate ramping up on the stack: answer database /
-                back‑end questions and review MySQL schema & stored procedure
+                back-end questions and review MySQL schema & stored procedure
                 changes to ensure performance and consistency.
               </li>
               <li>
-                Proactively clarify requirements in low‑spec contexts: derive
+                Proactively clarify requirements in low-spec contexts: derive
                 business rules from legacy implementations, production data,
-                user feedback and ad‑hoc stakeholder conversations to reduce
+                user feedback and ad-hoc stakeholder conversations to reduce
                 rework and unblock development.
               </li>
               <li>
@@ -172,8 +202,8 @@
             & CI/CD optimization.
           </li>
           <li>
-            <strong>Software Developer</strong> &mdash; Med‑e‑Mass, Pretoria
-            (2017‑2020) – Full‑stack healthcare practice management & secure
+            <strong>Software Developer</strong> &mdash; Med-e-Mass, Pretoria
+            (2017-2020) – Full-stack healthcare practice management & secure
             data workflows.
           </li>
           <li>
@@ -183,17 +213,17 @@
           </li>
           <li>
             <strong>Software Developer</strong> &mdash; Wagersoft, Johannesburg
-            (2014‑2015) – High‑availability sports betting platform performance
+            (2014-2015) – High-availability sports betting platform performance
             & replication.
           </li>
           <li>
             <strong>Software Developer</strong> &mdash; Healthrad, Pretoria
-            (2011‑2014) – Radiology information system, speech recognition
+            (2011-2014) – Radiology information system, speech recognition
             integration.
           </li>
           <li>
             <strong>Software Developer</strong> &mdash; LGR Telecommunications,
-            Pretoria (2006‑2011) – High‑volume CDR parsing & partitioned Oracle
+            Pretoria (2006-2011) – High-volume CDR parsing & partitioned Oracle
             warehousing.
           </li>
         </ul>

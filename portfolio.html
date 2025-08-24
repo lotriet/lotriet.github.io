@@ -4,60 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christo Lotriet - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <style>
+      body {
+        font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont,
+          sans-serif;
+        background: #fafafa;
+      }
       .portfolio-container {
-        max-width: 800px;
-        margin: 20px auto;
+        max-width: 880px;
+        margin: 24px auto;
         background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        padding: 30px;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),
+          0 8px 24px rgba(0, 0, 0, 0.04);
+        border: 1px solid #e5e7eb;
+        padding: 48px 40px;
       }
       .portfolio-header {
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 48px;
       }
       .portfolio-header h1 {
-        font-size: 2.2em;
-        color: #2c3e50;
-        margin-bottom: 8px;
+        font-size: 2.25em;
+        color: #1f2937;
+        margin-bottom: 16px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
       }
       .portfolio-header p {
-        color: #555;
+        color: #374151;
         font-size: 1em;
+        font-weight: 400;
       }
       .project-list {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 32px;
       }
       .project {
-        border-left: 4px solid #667eea;
-        padding: 15px 20px;
-        background: #f8f9fa;
-        border-radius: 5px;
-        box-shadow: 0 2px 6px rgba(102, 126, 234, 0.05);
+        border-left: 4px solid #6366f1;
+        padding: 24px 32px;
+        background: #f9fafb;
+        border-radius: 4px;
+        border: 1px solid #e5e7eb;
+        box-shadow: none;
       }
       .project-title {
-        font-size: 1.2em;
-        color: #34495e;
-        font-weight: bold;
-        margin-bottom: 5px;
+        font-size: 1.1em;
+        color: #1f2937;
+        font-weight: 600;
+        margin-bottom: 8px;
+        letter-spacing: -0.01em;
       }
       .project-meta {
-        font-size: 0.9em;
-        color: #888;
-        margin-bottom: 8px;
+        font-size: 0.85em;
+        color: #6b7280;
+        margin-bottom: 16px;
+        font-weight: 400;
       }
       .project-description {
-        margin-bottom: 8px;
+        margin-bottom: 16px;
+        color: #374151;
+        line-height: 1.6;
+        font-weight: 400;
       }
       .project-links a {
-        color: #667eea;
+        color: #6366f1;
         text-decoration: none;
         margin-right: 16px;
         font-weight: 500;
+        font-size: 0.9em;
       }
       .project-links a:hover {
         text-decoration: underline;
@@ -71,7 +94,7 @@
         <p>
           Senior Software Developer &mdash; Portfolio<br />
           Showcasing selected personal and open-source projects.<br />
-          <a href="index.html" style="color: #667eea">View CV</a>
+          <a href="index.html" style="color: #6366f1">View CV</a>
         </p>
       </div>
       <div class="project-list">
