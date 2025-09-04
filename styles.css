@@ -304,27 +304,36 @@ body {
   top: 15px;
   right: 15px;
   display: flex;
-  gap: 6px;
+  gap: 10px;
   z-index: 1000;
 }
 
-
-.pdf-export-btn,
-.word-export-btn {
-  position: static;
+.export-btn {
+  display: flex;
+  align-items: center;
   background: rgba(255, 255, 255, 0.95);
-  color: #555;
+  color: #444;
   border: 1px solid #ddd;
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-size: 0.75em;
-  font-weight: 400;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-weight: 500;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: all 0.2s ease;
   backdrop-filter: blur(10px);
 }
 
+.export-btn .icon {
+  margin-right: 6px;
+  font-size: 1.1em;
+}
+
+.pdf-export-btn,
+.word-export-btn {
+  min-width: 44px;
+  justify-content: center;
+}
 
 .pdf-export-btn:hover,
 .word-export-btn:hover {
@@ -332,7 +341,6 @@ body {
   border-color: #bbb;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
-
 
 .pdf-export-btn:active,
 .word-export-btn:active {
@@ -449,9 +457,10 @@ body {
     right: 10px;
     gap: 8px;
   }
-  .pdf-export-btn,
-  .word-export-btn {
-    padding: 10px 16px;
-    font-size: 0.8em;
+  .export-btn {
+    padding: 8px;
+  }
+  .btn-text {
+    display: none;
   }
 }
