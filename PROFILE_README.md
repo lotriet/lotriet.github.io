@@ -1,8 +1,8 @@
 # Hi there! 👋 I'm Christo Lotriet
 
-## 🚀 Senior Software Developer | 15+ Years Experience
+## 🚀 Senior Software Developer 
 
-Welcome to my GitHub! I'm a passionate software developer with over 15 years of experience in building robust, scalable applications across various industries including government technology, healthcare, financial services, and telecommunications.
+Welcome to my GitHub! I'm a passionate software developer with extensive experience in building robust, scalable applications across various industries including government technology, healthcare, financial services, and telecommunications.
 
 ### 🎯 Currently Working On
 
@@ -52,7 +52,7 @@ Welcome to my GitHub! I'm a passionate software developer with over 15 years of 
 ### 🎓 Education & Certifications
 
 - **BSc Computer Science** - University of South Africa (UNISA)
-- **15+ Years** of hands-on development experience
+- **Extensive** hands-on development experience
 - **Agile/Scrum** methodologies
 - **CI/CD** pipeline management
 

@@ -1,6 +1,6 @@
 # Christo Lotriet - Software Developer CV
 
-This project is a digital Curriculum Vitae (CV) for Christo Lotriet, a senior software developer with over 15 years of experience in desktop, web, and enterprise database development. The CV is presented as a modern, responsive web page with export functionality.
+This project is a digital Curriculum Vitae (CV) for Christo Lotriet, a senior software developer with extensive experience in desktop, web, and enterprise database development. The CV is presented as a modern, responsive web page with export functionality.
 
 ## Features
 
