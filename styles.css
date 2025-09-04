@@ -91,6 +91,13 @@ body {
   opacity: 0.95;
 }
 
+.contact-item span:last-child {
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
 .content {
   padding: 48px 40px;
 }
