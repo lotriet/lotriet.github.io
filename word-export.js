@@ -6,10 +6,25 @@ function exportToWord() {
   // Only export the main CV content
   // Clone the CV container to avoid modifying the live DOM
   var cvContainer = document.querySelector(".cv-container").cloneNode(true);
+
+  // Fix email and LinkedIn links for Word export
+  var emailLink = cvContainer.querySelector('a[href^="mailto:"]');
+  var linkedinLink = cvContainer.querySelector('a[href^="https://linkedin"]');
+
+  if (emailLink) {
+    var emailParent = emailLink.parentNode;
+    emailParent.innerHTML = "✉️ " + emailLink.textContent;
+  }
+
+  if (linkedinLink) {
+    var linkedinParent = linkedinLink.parentNode;
+    linkedinParent.innerHTML = "🔗 " + linkedinLink.textContent;
+  }
+
   // Add inline margin to each .job div for Word export spacing
-  var jobs = cvContainer.querySelectorAll('.job');
-  jobs.forEach(function(job) {
-    job.style.marginBottom = '32px';
+  var jobs = cvContainer.querySelectorAll(".job");
+  jobs.forEach(function (job) {
+    job.style.marginBottom = "32px";
   });
   var content = cvContainer.outerHTML;
   var sourceHTML = header + content + footer;

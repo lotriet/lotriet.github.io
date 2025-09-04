@@ -1,6 +1,6 @@
 # Hi there! 👋 I'm Christo Lotriet
 
-## 🚀 Senior Software Developer 
+## 🚀 Senior Software Developer
 
 Welcome to my GitHub! I'm a passionate software developer with extensive experience in building robust, scalable applications across various industries including government technology, healthcare, financial services, and telecommunications.
 

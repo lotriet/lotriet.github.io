@@ -14,6 +14,34 @@ body {
   font-size: 15px;
 }
 
+.site-nav {
+  max-width: 880px;
+  margin: 0 auto 15px;
+  text-align: center;
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.site-nav a {
+  color: #4f46e5;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.site-nav a.active {
+  color: #1f2937;
+  font-weight: 600;
+}
+
 .cv-container {
   max-width: 880px;
   margin: 0 auto;
@@ -377,7 +405,7 @@ body {
   /* Ensure colors are preserved */
   * {
     -webkit-print-color-adjust: exact !important;
-    color-adjust: exact !important;
+    print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 }

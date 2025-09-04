@@ -11,11 +11,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="geo-redirect.js"></script>
     <style>
       body {
         font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont,
           sans-serif;
         background: #fafafa;
+      }
+
+      .site-nav {
+        margin-bottom: 15px;
       }
       .resume-container {
         max-width: 880px;
@@ -98,23 +103,50 @@
     </style>
   </head>
   <body>
+    <div class="site-nav">
+      <a href="#" onclick="window.history.back(); return false;">Resume</a> |
+      <a href="resume.html" class="active">Condensed Resume</a>
+    </div>
     <div class="resume-container">
       <div class="resume-header">
         <h1>Christo Lotriet</h1>
         <p>Software Developer | Enterprise Applications • Databases • Web</p>
-        <p>📍 North Carolina, USA | ✉️ gclotriet@outlook.com | 📞 (+1) 919 454 7856 | 🔗 <a href="https://linkedin.com/in/gclotriet" style="color: #6366f1; text-decoration: none;">linkedin.com/in/gclotriet</a></p>
+        <p>
+          📍 North Carolina, USA | ✉️ gclotriet@outlook.com | 📞 (+1) 919 454
+          7856 | 🔗
+          <a
+            href="https://linkedin.com/in/gclotriet"
+            style="color: #6366f1; text-decoration: none"
+            data-plain-text="linkedin.com/in/gclotriet"
+            >linkedin.com/in/gclotriet</a
+          >
+        </p>
       </div>
       <div class="resume-section">
         <h2>Summary</h2>
         <p>
-          Senior software developer with extensive experience delivering enterprise applications, database-driven solutions, and modern web platforms. Strong proficiency in ASP.NET MVC and C# (since 2020), with deep expertise in Delphi and advanced database programming. Skilled in building scalable systems, high-performance data processing solutions, and optimized database architectures across SQL Server, MySQL, Oracle, and PostgreSQL. Proven ability to contribute to mission-critical systems in industries including government technology, healthcare, telecommunications, finance, and occupational safety.
+          Senior software developer with extensive experience delivering
+          enterprise applications, database-driven solutions, and modern web
+          platforms. Strong proficiency in ASP.NET MVC and C# (since 2020), with
+          deep expertise in Delphi and advanced database programming. Skilled in
+          building scalable systems, high-performance data processing solutions,
+          and optimized database architectures across SQL Server, MySQL, Oracle,
+          and PostgreSQL. Proven ability to contribute to mission-critical
+          systems in industries including government technology, healthcare,
+          telecommunications, finance, and occupational safety.
         </p>
       </div>
-      
+
       <div class="resume-section">
         <h2>Objective</h2>
         <p>
-          Relocated to the United States in 2023 and currently employed as a Web Developer. Bringing substantial software development experience across enterprise systems, web applications, and databases, with a focus on .NET and modern web technologies. Seeking opportunities to apply this expertise to build innovative, reliable, and scalable software solutions that improve organizational efficiency and deliver real business value.
+          Relocated to the United States in 2023 and currently employed as a Web
+          Developer. Bringing substantial software development experience across
+          enterprise systems, web applications, and databases, with a focus on
+          .NET and modern web technologies. Seeking opportunities to apply this
+          expertise to build innovative, reliable, and scalable software
+          solutions that improve organizational efficiency and deliver real
+          business value.
         </p>
       </div>
       <div class="resume-section">
@@ -123,7 +155,9 @@
           <div class="skill-column">
             <div class="skill-category">
               <span class="skill-category-name">Languages:</span>
-              <span class="skill-items">C#, JavaScript, HTML5/CSS3, Delphi</span>
+              <span class="skill-items"
+                >C#, JavaScript, HTML5/CSS3, Delphi</span
+              >
             </div>
             <div class="skill-category">
               <span class="skill-category-name">Frameworks:</span>
@@ -133,11 +167,15 @@
           <div class="skill-column">
             <div class="skill-category">
               <span class="skill-category-name">Databases:</span>
-              <span class="skill-items">SQL Server, MySQL, PostgreSQL, Oracle</span>
+              <span class="skill-items"
+                >SQL Server, MySQL, PostgreSQL, Oracle</span
+              >
             </div>
             <div class="skill-category">
               <span class="skill-category-name">Tools:</span>
-              <span class="skill-items">Visual Studio, Git, Jenkins, JIRA, Agile/CI/CD</span>
+              <span class="skill-items"
+                >Visual Studio, Git, Jenkins, JIRA, Agile/CI/CD</span
+              >
             </div>
           </div>
         </div>
@@ -168,100 +206,128 @@
         <h2>Professional Experience</h2>
         <ul class="resume-list">
           <li>
-            <strong>💼 Courthouse Computer Systems | Web Developer</strong> &mdash; North Carolina, United States (Jan 2023-Present)
+            <strong>💼 Courthouse Computer Systems | Web Developer</strong>
+            &mdash; North Carolina, United States (Jan 2023-Present)
             <ul class="achievements-list">
               <li>
-                Contribute to the development and maintenance of web-based government record systems for Register of Deeds offices across North Carolina.
+                Contribute to the development and maintenance of web-based
+                government record systems for Register of Deeds offices across
+                North Carolina.
               </li>
               <li>
-                Support enhancements in ASP.NET MVC, C#, and SQL to improve usability and ensure reliable access to land and vital records.
+                Support enhancements in ASP.NET MVC, C#, and SQL to improve
+                usability and ensure reliable access to land and vital records.
               </li>
               <li>
-                Assist in the implementation of secure online payment functionality for certified document requests.
+                Assist in the implementation of secure online payment
+                functionality for certified document requests.
               </li>
               <li>
-                Collaborate with the team on solutions that streamline operations and improve public records management.
+                Collaborate with the team on solutions that streamline
+                operations and improve public records management.
               </li>
             </ul>
           </li>
           <li>
-            <strong>💼 Discovery Limited | Software Developer</strong> &mdash; Johannesburg, South Africa (Jul 2020-Dec 2022)
+            <strong>💼 Discovery Limited | Software Developer</strong> &mdash;
+            Johannesburg, South Africa (Jul 2020-Dec 2022)
             <ul class="achievements-list">
               <li>
-                Supported the development and maintenance of enterprise-level financial systems across multiple business units.
+                Supported the development and maintenance of enterprise-level
+                financial systems across multiple business units.
               </li>
               <li>
-                Worked with SQL scripts and stored procedures as part of ongoing system development and maintenance.
+                Worked with SQL scripts and stored procedures as part of ongoing
+                system development and maintenance.
               </li>
               <li>
-                Assisted with multi-environment CI/CD pipelines using Jenkins to ensure stable deployments.
+                Assisted with multi-environment CI/CD pipelines using Jenkins to
+                ensure stable deployments.
               </li>
               <li>
-                Participated in Agile processes including daily stand-ups, code reviews, and peer testing.
+                Participated in Agile processes including daily stand-ups, code
+                reviews, and peer testing.
               </li>
             </ul>
           </li>
           <li>
-            <strong>💼 Med-e-Mass | Software Developer</strong> &mdash; Pretoria, South Africa (Oct 2017-Jun 2020)
+            <strong>💼 Med-e-Mass | Software Developer</strong> &mdash;
+            Pretoria, South Africa (Oct 2017-Jun 2020)
             <ul class="achievements-list">
               <li>
-                Developed a full-stack practice management system for medical professionals.
+                Developed a full-stack practice management system for medical
+                professionals.
               </li>
               <li>
-                Designed and implemented REST API services for healthcare data workflows.
+                Designed and implemented REST API services for healthcare data
+                workflows.
               </li>
               <li>
                 Built responsive UIs supporting medical practice management.
               </li>
               <li>
-                Optimized PostgreSQL database performance through stored procedures and indexing.
+                Optimized PostgreSQL database performance through stored
+                procedures and indexing.
               </li>
               <li>
-                Implemented secure handling of patient records in compliance with healthcare regulations.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>💼 NOSA | Software Developer</strong> &mdash; Pretoria, South Africa (Aug 2015-Sep 2017)
-            <ul class="achievements-list">
-              <li>
-                Built a health and safety management system with advanced reporting dashboards in QlikView.
-              </li>
-              <li>
-                Delivered real-time compliance monitoring tools using Firebird databases.
+                Implemented secure handling of patient records in compliance
+                with healthcare regulations.
               </li>
             </ul>
           </li>
           <li>
-            <strong>💼 Wagersoft | Software Developer</strong> &mdash; Johannesburg, South Africa (Oct 2014-Jul 2015)
+            <strong>💼 NOSA | Software Developer</strong> &mdash; Pretoria,
+            South Africa (Aug 2015-Sep 2017)
             <ul class="achievements-list">
               <li>
-                Maintained a sports betting platform ensuring 99.9% uptime during peak activity.
+                Built a health and safety management system with advanced
+                reporting dashboards in QlikView.
               </li>
               <li>
-                Developed reporting and database replication strategies for redundancy and compliance.
+                Delivered real-time compliance monitoring tools using Firebird
+                databases.
               </li>
             </ul>
           </li>
           <li>
-            <strong>💼 Healthrad | Software Developer</strong> &mdash; Pretoria, South Africa (Oct 2011-Sep 2014)
+            <strong>💼 Wagersoft | Software Developer</strong> &mdash;
+            Johannesburg, South Africa (Oct 2014-Jul 2015)
             <ul class="achievements-list">
               <li>
-                Developed a Radiology Information System (RIS) with secure patient data management.
+                Maintained a sports betting platform ensuring 99.9% uptime
+                during peak activity.
               </li>
               <li>
-                Integrated speech recognition SDKs to automate medical reporting.
+                Developed reporting and database replication strategies for
+                redundancy and compliance.
               </li>
             </ul>
           </li>
           <li>
-            <strong>💼 LGR Telecommunications | Software Developer</strong> &mdash; Pretoria, South Africa (Oct 2006-Sep 2011)
+            <strong>💼 Healthrad | Software Developer</strong> &mdash; Pretoria,
+            South Africa (Oct 2011-Sep 2014)
             <ul class="achievements-list">
               <li>
-                Contributed to a telecom CDR processing system handling millions of records daily.
+                Developed a Radiology Information System (RIS) with secure
+                patient data management.
               </li>
               <li>
-                Designed a partitioned Oracle data warehouse, improving processing performance by 95%.
+                Integrated speech recognition SDKs to automate medical
+                reporting.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>💼 LGR Telecommunications | Software Developer</strong>
+            &mdash; Pretoria, South Africa (Oct 2006-Sep 2011)
+            <ul class="achievements-list">
+              <li>
+                Contributed to a telecom CDR processing system handling millions
+                of records daily.
+              </li>
+              <li>
+                Designed a partitioned Oracle data warehouse, improving
+                processing performance by 95%.
               </li>
             </ul>
           </li>
@@ -270,7 +336,10 @@
       <div class="resume-section">
         <h2>Education</h2>
         <ul class="resume-list">
-          <li>BSc Computer Science — University of South Africa (UNISA), Pretoria (Jan 2008)</li>
+          <li>
+            BSc Computer Science — University of South Africa (UNISA), Pretoria
+            (Jan 2008)
+          </li>
         </ul>
       </div>
       <div class="resume-section">
@@ -281,7 +350,7 @@
         </ul>
       </div>
       <div class="resume-links">
-        <a href="index.html">Full CV</a>
+        <a href="#" onclick="window.history.back(); return false;">Full CV</a>
         <a href="portfolio.html">Portfolio</a>
       </div>
     </div>
