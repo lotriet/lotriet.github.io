@@ -96,6 +96,15 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 2px 6px;
   border-radius: 4px;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+}
+
+.phone-number {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  text-decoration: none !important;
+  pointer-events: auto;
 }
 
 .content {

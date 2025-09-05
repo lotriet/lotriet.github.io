@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
     <title>Christo Lotriet - Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -108,8 +109,8 @@
         <h1>Christo Lotriet</h1>
         <p>Software Developer | Enterprise Applications • Databases • Web</p>
         <p>
-          📍 North Carolina, USA | ✉️ gclotriet@outlook.com | 📞 (+1) 919 454
-          7856 | 🔗
+          📍 North Carolina, USA | ✉️ gclotriet@outlook.com | 📞 <span class="phone-number">(+1) 919 454
+          7856</span> | 🔗
           <a
             href="https://linkedin.com/in/gclotriet"
             style="color: #6366f1; text-decoration: none"
@@ -192,6 +193,11 @@
           }
           .skill-items {
             color: #1f2937;
+          }
+          .phone-number {
+            color: inherit !important;
+            -webkit-text-fill-color: inherit !important;
+            text-decoration: none !important;
           }
         </style>
       </div>
