@@ -490,6 +490,10 @@ body {
   color: #0284c7;
 }
 
+.skill-heading-secondary {
+  margin-top: 15px;
+}
+
 .professional-dev-description {
   margin-top: 12px;
   font-size: 0.9em;
