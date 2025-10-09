@@ -15,11 +15,9 @@
     <script src="geo-redirect.js"></script>
     <style>
       body {
-        font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont,
-          sans-serif;
+        font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
         background: #fafafa;
       }
-
       .site-nav {
         margin-bottom: 15px;
       }
@@ -28,31 +26,9 @@
         margin: 24px auto;
         background: #fff;
         border-radius: 2px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),
-          0 8px 24px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.04);
         border: 1px solid #e5e7eb;
         padding: 48px 40px;
-      }
-      .resume-header {
-        text-align: center;
-        margin-bottom: 36px;
-      }
-      .resume-header h1 {
-        font-size: 2em;
-        color: #1f2937;
-        margin: 0 0 8px;
-        font-weight: 600;
-        letter-spacing: -0.02em;
-      }
-      .resume-header p {
-        color: #374151;
-        font-size: 0.95em;
-        margin: 0 0 6px;
-        font-weight: 400;
-      }
-      .resume-header p:last-child {
-        font-size: 0.9em;
-        margin-top: 8px;
       }
       .resume-section {
         margin-bottom: 40px;
@@ -105,20 +81,28 @@
   </head>
   <body>
     <div class="resume-container">
-      <div class="resume-header">
+  <header class="header">
         <h1>Christo Lotriet</h1>
-        <p>Software Developer | Enterprise Applications • Databases • Web</p>
-        <p>
-          📍 North Carolina, USA | ✉️ gclotriet@outlook.com | 📞
-          <span class="phone-number">(+1) 919 454 7856</span> | 🔗
-          <a
-            href="https://linkedin.com/in/gclotriet"
-            class="resume-link"
-            data-plain-text="linkedin.com/in/gclotriet"
-            >linkedin.com/in/gclotriet</a
-          >
-        </p>
-      </div>
+        <h3>Software Developer | Enterprise Applications • Databases • Web</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span>📍</span>
+            <span>North Carolina, USA</span>
+          </div>
+          <div class="contact-item">
+            <span>✉️</span>
+            <a href="mailto:gclotriet@outlook.com" class="contact-link" data-plain-text="gclotriet@outlook.com">gclotriet@outlook.com</a>
+          </div>
+          <div class="contact-item">
+            <span>📞</span>
+            <span class="phone-number">(+1) 919 454 7856</span>
+          </div>
+          <div class="contact-item">
+            <span>🔗</span>
+            <a href="https://linkedin.com/in/gclotriet" class="contact-link" data-plain-text="linkedin.com/in/gclotriet">linkedin.com/in/gclotriet</a>
+          </div>
+        </div>
+      </header>
       <div class="resume-section">
         <h2>Summary</h2>
         <p>
@@ -153,9 +137,7 @@
           <div class="skill-column">
             <div class="skill-category">
               <span class="skill-category-name">Languages:</span>
-              <span class="skill-items"
-                >C#, JavaScript, HTML5/CSS3, Delphi</span
-              >
+              <span class="skill-items">C#, JavaScript, HTML5/CSS3, Delphi</span>
             </div>
             <div class="skill-category">
               <span class="skill-category-name">Frameworks:</span>
@@ -163,30 +145,21 @@
             </div>
             <div class="skill-category">
               <span class="skill-category-name">Tools:</span>
-              <span class="skill-items"
-                >Visual Studio, Git, Jenkins, JIRA, Agile/Scrum, CI/CD</span
-              >
+              <span class="skill-items">Visual Studio, VS Code, Git, Jenkins, JIRA, Agile/Scrum, CI/CD</span>
             </div>
           </div>
           <div class="skill-column">
             <div class="skill-category">
               <span class="skill-category-name">Databases:</span>
-              <span class="skill-items"
-                >SQL Server, PostgreSQL, Oracle, MySQL</span
-              >
+              <span class="skill-items">SQL Server, PostgreSQL, Oracle, MySQL</span>
             </div>
             <div class="skill-category">
               <span class="skill-category-name">Focus Areas:</span>
-              <span class="skill-items"
-                >Enterprise Web Applications, Database Design & Performance,
-                Cross-functional Collaboration</span
-              >
+              <span class="skill-items">Enterprise Web Applications, Database Design & Performance, Cross-functional Collaboration</span>
             </div>
             <div class="skill-category">
               <span class="skill-category-name">Currently Learning:</span>
-              <span class="skill-items currently-learning-skills"
-                >Azure OpenAI</span
-              >
+              <span class="skill-items currently-learning-skills">Azure OpenAI</span>
             </div>
           </div>
         </div>
@@ -219,33 +192,6 @@
           </li>
           <li>
             <strong>💼 Discovery Limited | Software Developer</strong> &mdash;
-            Johannesburg, South Africa (Jul 2020-Dec 2022)
-            <ul class="achievements-list">
-              <li>
-                Supported enterprise healthcare systems within Discovery Health
-                through team-based development and maintenance work.
-              </li>
-              <li>
-                Worked with SQL scripts and stored procedures as part of ongoing
-                system maintenance and stability improvements.
-              </li>
-              <li>
-                Assisted with multi-environment CI/CD processes using Jenkins
-                and participated in daily Agile practices including stand-ups
-                and peer testing.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>💼 Med-e-Mass | Software Developer</strong> &mdash;
-            Pretoria, South Africa (Oct 2017-Jun 2020)
-            <ul class="achievements-list">
-              <li>
-                Developed and maintained a full-stack practice management system
-                used by medical professionals across South Africa.
-              </li>
-              <li>
-                Designed REST API services for secure healthcare data workflows
                 and created responsive user interfaces for practice operations.
               </li>
               <li>
