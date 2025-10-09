@@ -528,6 +528,38 @@ body {
   margin-top: 20px;
 }
 
+.skills-simple {
+  margin-top: 15px;
+}
+
+.skill-category {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.skill-category strong {
+  color: #1f2937;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.skill-category.currently-learning {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: #f0f9ff;
+  border-left: 4px solid #0284c7;
+  border-radius: 4px;
+}
+
+.highlight {
+  color: #0284c7;
+  font-weight: 600;
+  background: #e0f2fe;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
 .skills-row {
   display: flex;
   gap: 30px;
