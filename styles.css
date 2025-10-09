@@ -473,3 +473,101 @@ body {
     display: none;
   }
 }
+
+/* Clean up inline styles - move to proper classes */
+.contact-link {
+  color: white;
+  text-decoration: none;
+}
+
+.currently-learning-heading {
+  margin-top: 20px;
+}
+
+.azure-openai-pill {
+  background: #e0f2fe;
+  border-color: #0284c7;
+  color: #0284c7;
+}
+
+.professional-dev-description {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Languages section styles */
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-name {
+  font-weight: 600;
+  min-width: 80px;
+}
+
+.language-level {
+  color: #4a5568;
+}
+
+/* Skills section improvements */
+.skills-modern {
+  margin-top: 20px;
+}
+
+.skills-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.skill-group {
+  flex: 1;
+}
+
+.skill-heading {
+  font-size: 15px;
+  margin: 0 0 10px;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-pill {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 13px;
+  display: inline-block;
+}
+
+/* Resume-specific styles */
+.resume-link {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.currently-learning-skills {
+  color: #0284c7;
+  font-weight: 500;
+}
+
+.professional-dev-note {
+  font-size: 0.9em;
+  color: #666;
+}
