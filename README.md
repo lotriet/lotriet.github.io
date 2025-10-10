@@ -27,6 +27,11 @@ This project is a digital Curriculum Vitae (CV) for Christo Lotriet, a senior so
 
 This project is versioned with Git and hosted at [https://github.com/lotriet/employment](https://github.com/lotriet/employment).
 
+## Demo Project Short Links
+
+- **JobFair Site Live Demo:** [https://lotriet.short.gy/jobfair](https://lotriet.short.gy/jobfair)
+- **RAG API Live Demo:** [https://lotriet.short.gy/ragapi](https://lotriet.short.gy/ragapi)
+
 ## About
 
 This CV is designed to be both visually appealing and practical for sharing, printing, or exporting. It demonstrates not only the professional background of Christo Lotriet but also web development best practices in code organization and user experience.
