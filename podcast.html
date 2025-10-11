@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <title>Professional Journey Podcast - Christo Lotriet</title>
-    <meta name="description" content="Listen to Christo Lotriet's 18+ year journey in software development across telecommunications, healthcare, and government technology." />
+    <meta name="description" content="Listen to Christo Lotriet's two-decade journey in software development across telecommunications, healthcare, and government technology." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,31 +14,24 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <style>
-      .podcast-hero {
+      .podcast-intro {
         background: #f9fafb;
-        padding: 32px;
+        padding: 20px 24px;
         border-radius: 4px;
         border-left: 4px solid #6366f1;
-        margin-bottom: 32px;
-        text-align: center;
+        margin-bottom: 24px;
       }
 
-      .podcast-icon {
-        font-size: 3em;
-        margin-bottom: 16px;
-        display: block;
-      }
-
-      .podcast-hero h2 {
+      .podcast-intro h2 {
         color: #1f2937;
-        font-size: 1.8em;
-        margin-bottom: 8px;
+        font-size: 1.4em;
+        margin-bottom: 6px;
         font-weight: 600;
       }
 
-      .podcast-hero p {
+      .podcast-intro p {
         color: #6b7280;
-        font-size: 1.1em;
+        font-size: 0.95em;
         margin-bottom: 0;
       }
 
@@ -46,14 +39,14 @@
         background: white;
         border: 1px solid #e5e7eb;
         border-radius: 4px;
-        padding: 32px;
-        margin-bottom: 32px;
+        padding: 20px;
+        margin-bottom: 24px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
       }
 
       .audio-player {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
         border-radius: 4px;
         outline: none;
       }
@@ -71,12 +64,12 @@
         gap: 8px;
         background: #6366f1;
         color: white;
-        padding: 10px 24px;
+        padding: 8px 20px;
         border-radius: 4px;
         text-decoration: none;
         font-weight: 500;
         transition: background 0.2s;
-        font-size: 0.95em;
+        font-size: 0.9em;
       }
 
       .download-btn:hover {
@@ -84,69 +77,53 @@
       }
 
       .duration {
-        font-size: 0.9em;
+        font-size: 0.85em;
         color: #6b7280;
       }
 
       .ai-disclaimer {
         background: #fef3c7;
         border-left: 4px solid #f59e0b;
-        padding: 16px 24px;
+        padding: 12px 20px;
         border-radius: 4px;
-        margin-bottom: 32px;
-        font-size: 0.95em;
+        margin-bottom: 24px;
+        font-size: 0.9em;
         color: #92400e;
-        line-height: 1.6;
+        line-height: 1.5;
       }
 
       .ai-disclaimer strong {
         color: #78350f;
-        display: block;
-        margin-bottom: 4px;
+        display: inline;
+        margin-right: 6px;
       }
 
       .highlights-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-        margin-bottom: 32px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
       }
 
       .highlight-card {
         background: #f9fafb;
         border: 1px solid #e5e7eb;
-        padding: 20px;
+        padding: 16px;
         border-radius: 4px;
         border-left: 3px solid #6366f1;
       }
 
       .highlight-card h3 {
         color: #1f2937;
-        font-size: 1.1em;
-        margin-bottom: 8px;
+        font-size: 1em;
+        margin-bottom: 6px;
         font-weight: 600;
       }
 
       .highlight-card p {
         color: #6b7280;
-        font-size: 0.95em;
-        line-height: 1.6;
+        font-size: 0.9em;
+        line-height: 1.5;
         margin: 0;
-      }
-
-      .topics-section {
-        background: white;
-        border: 1px solid #e5e7eb;
-        border-radius: 4px;
-        padding: 32px;
-        margin-bottom: 32px;
-      }
-
-      .topics-section h3 {
-        color: #1f2937;
-        font-size: 1.3em;
-        margin-bottom: 16px;
-        font-weight: 600;
       }
 
       .topics-list {
@@ -170,31 +147,87 @@
         font-weight: 600;
       }
 
-      .back-link {
-        display: inline-block;
-        color: #6366f1;
-        text-decoration: none;
-        font-weight: 500;
+      .transcript-section {
         margin-top: 24px;
-        transition: color 0.2s;
       }
 
-      .back-link:hover {
-        color: #4f46e5;
-        text-decoration: underline;
+      .transcript-toggle {
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 4px;
+        padding: 16px 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background 0.2s;
+        user-select: none;
+      }
+
+      .transcript-toggle:hover {
+        background: #f3f4f6;
+      }
+
+      .transcript-toggle h3 {
+        margin: 0;
+        color: #1f2937;
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+
+      .transcript-arrow {
+        font-size: 1.2em;
+        transition: transform 0.3s;
+        color: #6366f1;
+      }
+
+      .transcript-arrow.open {
+        transform: rotate(90deg);
+      }
+
+      .transcript-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-top: none;
+        border-radius: 0 0 4px 4px;
+      }
+
+      .transcript-content.open {
+        max-height: 800px;
+        overflow-y: auto;
+      }
+
+      .transcript-text {
+        padding: 20px;
+        line-height: 1.8;
+        color: #374151;
+      }
+
+      .transcript-text .speaker {
+        font-weight: 600;
+        color: #6366f1;
+        margin-top: 16px;
+        display: block;
+      }
+
+      .transcript-text .speaker:first-child {
+        margin-top: 0;
+      }
+
+      .transcript-line {
+        margin: 12px 0;
       }
 
       @media (max-width: 768px) {
-        .content {
-          padding: 32px 24px;
-        }
-
-        .podcast-hero {
-          padding: 24px;
+        .podcast-intro {
+          padding: 16px 20px;
         }
 
         .audio-section {
-          padding: 24px;
+          padding: 16px;
         }
 
         .audio-controls {
@@ -251,18 +284,35 @@
               >linkedin.com/in/gclotriet</a
             >
           </div>
+          <div class="contact-item">
+            <span>💼</span>
+            <a
+              href="portfolio.html"
+              class="contact-link"
+              data-plain-text="View Portfolio"
+              >View Portfolio</a
+            >
+          </div>
+          <div class="contact-item">
+            <span>📄</span>
+            <a
+              href="index.html"
+              class="contact-link"
+              data-plain-text="View Resume"
+              >View Resume</a
+            >
+          </div>
         </div>
       </header>
 
       <div class="content">
-        <div class="podcast-hero">
-          <span class="podcast-icon">🎙️</span>
-          <h2>Two Decades in Software Development</h2>
+        <div class="podcast-intro">
+          <h2>🎙️ Two Decades in Software Development</h2>
           <p>A 12-minute conversation exploring my professional journey</p>
         </div>
 
         <div class="ai-disclaimer">
-          <strong>ℹ️ About This Podcast</strong>
+          <strong>ℹ️ About This Podcast:</strong>
           This podcast features AI-generated voices created using ElevenLabs technology.
           The content authentically represents my professional experience and technical
           expertise, presented in an engaging conversational format.
@@ -278,7 +328,177 @@
               <span>📥</span>
               <span>Download MP3</span>
             </a>
-            <span class="duration">⏱️ Duration: ~12-15 minutes</span>
+            <span class="duration">⏱️ Duration: ~15 minutes</span>
+          </div>
+        </div>
+
+        <div class="transcript-section">
+          <div class="transcript-toggle" onclick="toggleTranscript()">
+            <h3>📄 View Full Transcript</h3>
+            <span class="transcript-arrow" id="transcript-arrow">▶</span>
+          </div>
+          <div class="transcript-content" id="transcript-content">
+            <div class="transcript-text" id="transcript-text">
+              <div class="transcript-line">
+                <span class="speaker">Host (Alex):</span>
+                <p>Hello and welcome to Tech Career Insights, the podcast where we explore the fascinating journeys of professionals in technology. My guest today is Christo Lotriet, a software developer with an impressive two decades of experience spanning multiple continents and industries. Christo, welcome to the show!</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>Thank you, Alex. It's great to be here!</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>Let's start at the beginning. You started your career back in 2006 with LGR Telecommunications in South Africa. What was that experience like?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>That was an incredible learning experience. I was working on CDR systems—Call Detail Record processing—handling millions of telecommunications records daily for major South African carriers. We built reporting tools for billing analysis and fraud detection. The scale was massive, and it taught me early on about performance optimization and handling high-volume data processing.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>From telecom, you moved into healthcare with Healthrad. That's quite a shift. What drew you to that industry?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>Healthcare technology fascinated me because of its direct impact on people's lives. At Healthrad, I developed a Radiology Information System used by practices across South Africa. We integrated speech recognition technology to improve radiologist workflows, created diagnostic report templates, and automated billing systems—all while ensuring strict compliance with healthcare regulations. It was challenging but incredibly rewarding.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>Your next role was with Wagersoft in the sports betting industry. That must have required rock-solid reliability.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>Absolutely. High-availability was non-negotiable. We're talking about a platform that needed 100% uptime during major sporting events. I worked on real-time reporting systems and implemented database replication strategies. The pressure during big events was intense, but it taught me a lot about building truly resilient systems.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>Then you moved to NOSA for occupational health and safety. What kind of systems were you building there?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>At NOSA, I developed risk management systems with QlikView dashboards and real-time compliance monitoring. We optimized database designs specifically for reporting and analysis of workplace safety metrics. It was all about giving organizations the tools they needed to keep their people safe.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>Med-e-Mass brought you back to healthcare. Tell us about that experience.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>That was a full-stack role developing a practice management system for medical professionals across South Africa. I designed REST API services for secure healthcare data workflows and created responsive user interfaces. A big focus was PostgreSQL optimization—stored procedures, indexing, performance tuning—all while maintaining compliant healthcare data handling.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>Discovery Limited is a major name in South African healthcare. What was it like working there?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>Discovery was my introduction to enterprise-scale healthcare systems. I supported Discovery Health through team-based development and maintenance work, worked extensively with SQL scripts and stored procedures, and got deep into multi-environment CI/CD processes using Jenkins. The daily Agile practices—stand-ups, peer testing—really sharpened my collaborative skills.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>And that's also when you transitioned to .NET and C#, correct?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>Yes! I'd been working primarily with Delphi for years, but in 2020 I made the shift to .NET technologies. It was a deliberate move to align with where the industry was heading. I embraced modern web development with ASP.NET MVC, C#, and cloud platforms.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>Then in 2023, you made a major life change—relocating to the United States to join Courthouse Computer Systems. How was that transition?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>It was significant both professionally and personally. At Courthouse Computer Systems, I work on web-based public records systems for Register of Deeds offices across North Carolina counties. We're talking about systems that provide reliable access to land and vital records, secure online payment processing for certified documents. It's government technology that needs to be bulletproof. The transition from South Africa to the US was challenging, but the work itself felt familiar—building mission-critical systems that people depend on.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>You've worked with quite a range of databases—SQL Server, PostgreSQL, Oracle, MySQL. What's your approach to database architecture?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>Every database has its strengths. I've learned to optimize for the specific use case—whether it's PostgreSQL's advanced features for complex queries, SQL Server's enterprise tooling, or MySQL's simplicity and speed. Database design and performance are often where projects succeed or fail, so I focus heavily on indexing strategies, query optimization, and understanding the actual data access patterns.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>Let's talk about your current learning focus—Azure OpenAI and cloud technologies. What's driving that interest?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>The AI revolution is here, and I want to be at the forefront. I'm actively developing expertise in Azure OpenAI Service, prompt engineering, and building generative AI pipelines through hands-on projects and Microsoft learning paths. I see AI as a powerful tool to augment development workflows, but it requires strategic use—you need thorough validation, architectural considerations, and a clear understanding of what you're building.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>You mentioned using AI tools in your workflow. How do you approach that?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>I use AI strategically throughout development—from exploring specifications to scaffolding tests—but I never substitute my judgment. Everything gets validated. I check licensing compliance, ensure it fits the architecture, and verify it meets our standards. AI is for enhanced productivity, not blind trust.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>Looking across your entire career—telecom, healthcare, betting, safety, government—what threads tie it all together?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>Continuous learning and adaptability. Every industry taught me something new. Telecom taught me scale. Healthcare taught me precision and compliance. Betting taught me resilience. Safety taught me responsibility. Government taught me reliability. The common thread is solving real problems for real people with solid, dependable technology.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>What advice would you give to developers early in their careers?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>Be curious and don't be afraid to change industries or technologies. Some of my best growth came from stepping into unfamiliar territory. Master your fundamentals—databases, algorithms, system design—because those transcend any specific technology. And always, always focus on delivering measurable business value, not just writing code.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>What's next for you professionally?</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>I'm returning to South Africa and looking for opportunities where I can apply my diverse experience—whether that's software development, project coordination, or data-focused roles. I'm particularly excited about positions where I can leverage both my technical expertise and my understanding of the South African business landscape. And of course, continuing to build with Azure OpenAI and cloud technologies.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Host:</span>
+                <p>Christo, this has been fascinating. Nearly two decades of diverse experience, multiple industries, international perspective—you've built an impressive career. Thanks so much for sharing your journey with us.</p>
+              </div>
+
+              <div class="transcript-line">
+                <span class="speaker">Christo:</span>
+                <p>Thank you! It's been a pleasure.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -330,8 +550,8 @@
           </div>
         </section>
 
-        <div class="topics-section">
-          <h3>Topics Covered in This Podcast</h3>
+        <section class="section">
+          <h2>Topics Covered in This Podcast</h2>
           <ul class="topics-list">
             <li>
               <strong>Early Career:</strong> Telecommunications and processing millions of
@@ -366,7 +586,7 @@
               collaboration, and delivering measurable business value
             </li>
           </ul>
-        </div>
+        </section>
 
         <section class="section">
           <h2>Why Listen?</h2>
@@ -390,29 +610,21 @@
           </div>
         </section>
 
-        <section class="section">
-          <h2>Let's Connect</h2>
-          <div class="objective-text">
-            Interested in working together or discussing technology? I'm always
-            happy to connect with fellow professionals, explore opportunities, or
-            talk about interesting technical challenges—especially anything involving
-            Azure OpenAI integration.
-          </div>
-          <div style="margin-top: 20px;">
-            <a href="https://linkedin.com/in/gclotriet" target="_blank" style="color: #6366f1; text-decoration: none; font-weight: 500; margin-right: 20px;">
-              💼 LinkedIn
-            </a>
-            <a href="mailto:gclotriet@outlook.com" style="color: #6366f1; text-decoration: none; font-weight: 500; margin-right: 20px;">
-              📧 Email
-            </a>
-            <a href="tel:+19194547856" style="color: #6366f1; text-decoration: none; font-weight: 500;">
-              📱 Call
-            </a>
-          </div>
-        </section>
-
-        <a href="index.html" class="back-link">← Back to Resume</a>
       </div>
     </div>
+    <script>
+      function toggleTranscript() {
+        const content = document.getElementById('transcript-content');
+        const arrow = document.getElementById('transcript-arrow');
+
+        if (content.classList.contains('open')) {
+          content.classList.remove('open');
+          arrow.classList.remove('open');
+        } else {
+          content.classList.add('open');
+          arrow.classList.add('open');
+        }
+      }
+    </script>
   </body>
 </html>

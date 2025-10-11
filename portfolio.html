@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
     <title>Christo Lotriet - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,160 +12,152 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      body {
-        font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont,
-          sans-serif;
-        background: #fafafa;
-      }
-      .portfolio-container {
-        max-width: 880px;
-        margin: 24px auto;
-        background: #fff;
-        border-radius: 2px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),
-          0 8px 24px rgba(0, 0, 0, 0.04);
-        border: 1px solid #e5e7eb;
-        padding: 48px 40px;
-      }
-      .portfolio-header {
-        text-align: center;
-        margin-bottom: 48px;
-      }
-      .portfolio-header h1 {
-        font-size: 2.25em;
-        color: #1f2937;
-        margin-bottom: 16px;
-        font-weight: 600;
-        letter-spacing: -0.02em;
-      }
-      .portfolio-header p {
-        color: #374151;
-        font-size: 1em;
-        font-weight: 400;
-      }
-      .project-list {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-      }
-      .project {
-        border-left: 4px solid #6366f1;
-        padding: 24px 32px;
-        background: #f9fafb;
-        border-radius: 4px;
-        border: 1px solid #e5e7eb;
-        box-shadow: none;
-      }
-      .project-title {
-        font-size: 1.1em;
-        color: #1f2937;
-        font-weight: 600;
-        margin-bottom: 8px;
-        letter-spacing: -0.01em;
-      }
-      .project-meta {
-        font-size: 0.85em;
-        color: #6b7280;
-        margin-bottom: 16px;
-        font-weight: 400;
-      }
-      .project-description {
-        margin-bottom: 16px;
-        color: #374151;
-        line-height: 1.6;
-        font-weight: 400;
-      }
-      .project-links a {
-        color: #6366f1;
-        text-decoration: none;
-        margin-right: 16px;
-        font-weight: 500;
-        font-size: 0.9em;
-      }
-      .project-links a:hover {
-        text-decoration: underline;
-      }
-    </style>
   </head>
   <body>
-    <div class="portfolio-container">
-      <div class="portfolio-header">
+    <div class="cv-container">
+      <header class="header">
         <h1>Christo Lotriet</h1>
-        <p>
-          Senior Software Developer &mdash; Portfolio<br />
-          Showcasing selected personal and open-source projects.<br />
-          <a href="index.html" style="color: #6366f1">View CV</a>
-        </p>
-      </div>
-      <div class="project-list">
-        <!-- RAGAgent Project -->
-        <div class="project">
-          <div class="project-title">
-            RAGAgent – Retrieval-Augmented Generation API
+        <h3>Portfolio — Personal & Open-Source Projects</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span>📍</span>
+            <span>North Carolina, USA</span>
           </div>
-          <div class="project-meta">Open Source · 2025</div>
-          <div class="project-description">
-            A .NET 8 Web API that combines Azure AI Search and Azure OpenAI to
-            deliver intelligent question-answering over custom documents.
-            Features include configurable mock/real service modes, dependency
-            injection, and robust architecture diagrams.
+          <div class="contact-item">
+            <span>📞</span>
+            <span class="phone-number">(+1) 919-454-7856</span>
           </div>
-          <div class="project-description">
-            <strong>Key Technologies:</strong> .NET 8, C#, Azure OpenAI, Azure
-            AI Search, ASP.NET Core, Docker
-          </div>
-          <div class="project-links">
+          <div class="contact-item">
+            <span>✉️</span>
             <a
-              href="https://github.com/lotriet/ragagent"
-              target="_blank"
-              rel="noopener"
-              >GitHub Repository</a
-            >
-            <a
-              href="https://github.com/lotriet/ragagent/tree/main/docs"
-              target="_blank"
-              rel="noopener"
-              >Architecture Diagrams</a
-            >
-            <a
-              href="https://ragapi-webapp-bfc5ekgpd0cdeah5.canadacentral-01.azurewebsites.net/"
-              target="_blank"
-              rel="noopener"
-              >Live Demo</a
+              href="mailto:gclotriet@outlook.com"
+              class="contact-link"
+              data-plain-text="gclotriet@outlook.com"
+              >gclotriet@outlook.com</a
             >
           </div>
-        </div>
-        <!-- JobFair-Site Project -->
-        <div class="project">
-          <div class="project-title">JobFair Site – .NET Micro API Demo</div>
-          <div class="project-meta">Open Source · 2025</div>
-          <div class="project-description">
-            A modern .NET 8 Web API demo app featuring async/await patterns,
-            SQLite database, retry policy with Polly, and full REST API
-            endpoints. Designed for rapid technical showcases, live demos, and
-            professional portfolios. Includes interactive Swagger UI, Azure
-            deployment scripts, and a smart AI chatbot assistant.
-          </div>
-          <div class="project-description">
-            <strong>Key Technologies:</strong> .NET 8, C#, ASP.NET Core, Entity
-            Framework Core, SQLite, Polly, Swagger, Azure, GitHub Actions
-          </div>
-          <div class="project-links">
+          <div class="contact-item">
+            <span>🔗</span>
             <a
-              href="https://github.com/lotriet/jobfair-site"
-              target="_blank"
-              rel="noopener"
-              >GitHub Repository</a
+              href="https://linkedin.com/in/gclotriet"
+              class="contact-link"
+              data-plain-text="linkedin.com/in/gclotriet"
+              >linkedin.com/in/gclotriet</a
             >
+          </div>
+          <div class="contact-item">
+            <span>🎙️</span>
             <a
-              href="https://lotriet-jobfair-site-d4gvegbgaybne9cq.canadacentral-01.azurewebsites.net/"
-              target="_blank"
-              rel="noopener"
-              >Live Demo</a
+              href="podcast.html"
+              class="contact-link"
+              data-plain-text="Listen to My Journey"
+              >Listen to My Journey</a
+            >
+          </div>
+          <div class="contact-item">
+            <span>📄</span>
+            <a
+              href="index.html"
+              class="contact-link"
+              data-plain-text="View Resume"
+              >View Resume</a
             >
           </div>
         </div>
+      </header>
+
+      <div class="content">
+        <section class="section">
+          <h2>Featured Projects</h2>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">
+                  💼 RAGAgent – Retrieval-Augmented Generation API
+                </div>
+                <div class="job-location">Open Source Project</div>
+              </div>
+              <div class="job-date">2025</div>
+            </div>
+            <div class="job-description">
+              <p>
+                A .NET 8 Web API that combines Azure AI Search and Azure OpenAI to
+                deliver intelligent question-answering over custom documents.
+                Features include configurable mock/real service modes, dependency
+                injection, and robust architecture diagrams.
+              </p>
+              <p>
+                <strong>Key Technologies:</strong> .NET 8, C#, Azure OpenAI, Azure
+                AI Search, ASP.NET Core, Docker
+              </p>
+              <p style="margin-top: 16px;">
+                <a
+                  href="https://github.com/lotriet/ragagent"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: #6366f1; text-decoration: none; font-weight: 500; margin-right: 20px;"
+                  >GitHub Repository</a
+                >
+                <a
+                  href="https://github.com/lotriet/ragagent/tree/main/docs"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: #6366f1; text-decoration: none; font-weight: 500; margin-right: 20px;"
+                  >Architecture Diagrams</a
+                >
+                <a
+                  href="https://ragapi-webapp-bfc5ekgpd0cdeah5.canadacentral-01.azurewebsites.net/"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: #6366f1; text-decoration: none; font-weight: 500;"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">
+                  💼 JobFair Site – .NET Micro API Demo
+                </div>
+                <div class="job-location">Open Source Project</div>
+              </div>
+              <div class="job-date">2025</div>
+            </div>
+            <div class="job-description">
+              <p>
+                A modern .NET 8 Web API demo app featuring async/await patterns,
+                SQLite database, retry policy with Polly, and full REST API
+                endpoints. Designed for rapid technical showcases, live demos, and
+                professional portfolios. Includes interactive Swagger UI, Azure
+                deployment scripts, and a smart AI chatbot assistant.
+              </p>
+              <p>
+                <strong>Key Technologies:</strong> .NET 8, C#, ASP.NET Core, Entity
+                Framework Core, SQLite, Polly, Swagger, Azure, GitHub Actions
+              </p>
+              <p style="margin-top: 16px;">
+                <a
+                  href="https://github.com/lotriet/jobfair-site"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: #6366f1; text-decoration: none; font-weight: 500; margin-right: 20px;"
+                  >GitHub Repository</a
+                >
+                <a
+                  href="https://lotriet-jobfair-site-d4gvegbgaybne9cq.canadacentral-01.azurewebsites.net/"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: #6366f1; text-decoration: none; font-weight: 500;"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </body>
