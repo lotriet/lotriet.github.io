@@ -681,3 +681,45 @@ body {
   color: #374151;
   font-size: 0.95em;
 }
+
+/* Collapsible job entries */
+.job.collapsible .job-description {
+  display: none;
+}
+
+.job.collapsible.open .job-description {
+  display: block;
+}
+
+.job-toggle {
+  margin-left: 12px;
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.job-toggle:hover {
+  background: #fff;
+  border-color: #d1d5db;
+}
+
+/* Collapsible entries in resume.html (list layout) */
+.res-toggle {
+  margin-left: 8px;
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.res-toggle:hover {
+  background: #fff;
+  border-color: #d1d5db;
+}
