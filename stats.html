@@ -90,6 +90,15 @@
   <h1>Site Analytics Dashboard</h1>
 
   <div class="stats-container">
+    <h2>🌍 Global Statistics (All Visitors)</h2>
+    <div class="stat-card" style="background: #ef4444;">
+      <h3>Global Total Hits</h3>
+      <div class="number" id="globalTotalHits">Loading...</div>
+    </div>
+  </div>
+
+  <div class="stats-container">
+    <h2>📊 Local Statistics (This Browser)</h2>
     <div class="stat-card">
       <h3>Total Page Views</h3>
       <div class="number" id="totalViews">0</div>
@@ -128,6 +137,22 @@
   </div>
 
   <script>
+    // Load global statistics from Abacus API
+    async function loadGlobalStats() {
+      try {
+        const response = await fetch('https://abacus.jasoncameron.dev/get/lotriet.github.io/total-visits');
+        if (response.ok) {
+          const data = await response.json();
+          document.getElementById('globalTotalHits').textContent = data.value || 0;
+        } else {
+          document.getElementById('globalTotalHits').textContent = 'N/A';
+        }
+      } catch (e) {
+        document.getElementById('globalTotalHits').textContent = 'N/A';
+        console.log('Global stats unavailable');
+      }
+    }
+
     function loadAnalytics() {
       try {
         const stored = localStorage.getItem('siteAnalytics');
@@ -223,10 +248,14 @@
     }
 
     // Load analytics on page load
+    loadGlobalStats();
     loadAnalytics();
 
     // Auto-refresh every 30 seconds
-    setInterval(loadAnalytics, 30000);
+    setInterval(() => {
+      loadGlobalStats();
+      loadAnalytics();
+    }, 30000);
   </script>
 </body>
 </html>

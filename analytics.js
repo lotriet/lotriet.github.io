@@ -54,11 +54,31 @@
       region: locationData.region
     });
 
-    // Store updated analytics
+    // Store updated analytics locally
     try {
       localStorage.setItem('siteAnalytics', JSON.stringify(analytics));
     } catch (e) {
       console.error('Error storing analytics:', e);
+    }
+
+    // Track global hit counter using Abacus API
+    try {
+      // Increment total site visits
+      fetch('https://abacus.jasoncameron.dev/hit/lotriet.github.io/total-visits')
+        .catch(err => console.log('Global counter unavailable'));
+
+      // Increment page-specific counter
+      const pageKey = pagePath.replace(/\//g, '-').replace(/^-/, '') || 'home';
+      fetch(`https://abacus.jasoncameron.dev/hit/lotriet.github.io/page-${pageKey}`)
+        .catch(err => console.log('Page counter unavailable'));
+
+      // Increment country counter if available
+      if (locationData.countryCode !== 'XX') {
+        fetch(`https://abacus.jasoncameron.dev/hit/lotriet.github.io/country-${locationData.countryCode}`)
+          .catch(err => console.log('Country counter unavailable'));
+      }
+    } catch (e) {
+      console.log('Global analytics unavailable');
     }
   }
 
