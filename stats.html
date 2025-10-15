@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Analytics</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      color: #333;
+    }
+    .stats-container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .stat-card {
+      display: inline-block;
+      background: #6366f1;
+      color: white;
+      padding: 20px;
+      border-radius: 4px;
+      margin: 10px;
+      min-width: 150px;
+      text-align: center;
+    }
+    .stat-card h3 {
+      margin: 0 0 10px 0;
+      font-size: 14px;
+      font-weight: normal;
+      opacity: 0.9;
+    }
+    .stat-card .number {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background: #f9fafb;
+      font-weight: 600;
+      color: #374151;
+    }
+    .page-path {
+      font-family: 'Courier New', monospace;
+      color: #6366f1;
+    }
+    .timestamp {
+      font-size: 12px;
+      color: #6b7280;
+    }
+    .btn {
+      background: #ef4444;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #dc2626;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 40px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <h1>Site Analytics Dashboard</h1>
+
+  <div class="stats-container">
+    <div class="stat-card">
+      <h3>Total Page Views</h3>
+      <div class="number" id="totalViews">0</div>
+    </div>
+    <div class="stat-card" style="background: #10b981;">
+      <h3>Unique Pages</h3>
+      <div class="number" id="uniquePages">0</div>
+    </div>
+    <div class="stat-card" style="background: #f59e0b;">
+      <h3>Direct Visits</h3>
+      <div class="number" id="directVisits">0</div>
+    </div>
+    <div class="stat-card" style="background: #8b5cf6;">
+      <h3>Countries</h3>
+      <div class="number" id="uniqueCountries">0</div>
+    </div>
+  </div>
+
+  <div class="stats-container">
+    <h2>Views by Country</h2>
+    <div id="countryStats"></div>
+  </div>
+
+  <div class="stats-container">
+    <h2>Page Views by Page</h2>
+    <div id="pageStats"></div>
+  </div>
+
+  <div class="stats-container">
+    <h2>Recent Activity</h2>
+    <div id="recentActivity"></div>
+  </div>
+
+  <div class="stats-container">
+    <button class="btn" onclick="clearAnalytics()">Clear All Data</button>
+  </div>
+
+  <script>
+    function loadAnalytics() {
+      try {
+        const stored = localStorage.getItem('siteAnalytics');
+        if (!stored) {
+          showEmptyState();
+          return;
+        }
+
+        const analytics = JSON.parse(stored);
+
+        // Calculate statistics
+        const totalViews = analytics.length;
+        const uniquePages = new Set(analytics.map(a => a.page)).size;
+        const directVisits = analytics.filter(a => !a.referrer || a.referrer === 'direct').length;
+        const uniqueCountries = new Set(analytics.map(a => a.country).filter(c => c && c !== 'Unknown')).size;
+
+        // Update summary cards
+        document.getElementById('totalViews').textContent = totalViews;
+        document.getElementById('uniquePages').textContent = uniquePages;
+        document.getElementById('directVisits').textContent = directVisits;
+        document.getElementById('uniqueCountries').textContent = uniqueCountries;
+
+        // Views by country
+        const countryViews = {};
+        analytics.forEach(item => {
+          const country = item.country || 'Unknown';
+          const countryCode = item.countryCode || 'XX';
+          const key = `${country} (${countryCode})`;
+          countryViews[key] = (countryViews[key] || 0) + 1;
+        });
+
+        const sortedCountries = Object.entries(countryViews).sort((a, b) => b[1] - a[1]);
+        let countryStatsHTML = '<table><tr><th>Country</th><th>Views</th></tr>';
+        sortedCountries.forEach(([country, count]) => {
+          countryStatsHTML += `<tr><td>${country}</td><td>${count}</td></tr>`;
+        });
+        countryStatsHTML += '</table>';
+        document.getElementById('countryStats').innerHTML = countryStatsHTML;
+
+        // Page views by page
+        const pageViews = {};
+        analytics.forEach(item => {
+          const page = item.page || '/';
+          pageViews[page] = (pageViews[page] || 0) + 1;
+        });
+
+        const sortedPages = Object.entries(pageViews).sort((a, b) => b[1] - a[1]);
+        let pageStatsHTML = '<table><tr><th>Page</th><th>Views</th></tr>';
+        sortedPages.forEach(([page, count]) => {
+          pageStatsHTML += `<tr><td class="page-path">${page}</td><td>${count}</td></tr>`;
+        });
+        pageStatsHTML += '</table>';
+        document.getElementById('pageStats').innerHTML = pageStatsHTML;
+
+        // Recent activity (last 50)
+        const recentItems = analytics.slice(-50).reverse();
+        let activityHTML = '<table><tr><th>Page</th><th>Time</th><th>Country</th><th>Referrer</th></tr>';
+        recentItems.forEach(item => {
+          const date = new Date(item.timestamp);
+          const formattedDate = date.toLocaleString();
+          const referrer = item.referrer === 'direct' ? 'Direct' : (item.referrer || 'Unknown');
+          const country = item.country || 'Unknown';
+          const location = item.city && item.city !== 'Unknown' ? `${country}, ${item.city}` : country;
+          activityHTML += `
+            <tr>
+              <td class="page-path">${item.page || '/'}</td>
+              <td class="timestamp">${formattedDate}</td>
+              <td class="timestamp">${location}</td>
+              <td class="timestamp">${referrer}</td>
+            </tr>
+          `;
+        });
+        activityHTML += '</table>';
+        document.getElementById('recentActivity').innerHTML = activityHTML;
+
+      } catch (e) {
+        console.error('Error loading analytics:', e);
+        showEmptyState();
+      }
+    }
+
+    function showEmptyState() {
+      document.getElementById('countryStats').innerHTML = '<div class="empty-state">No data available yet</div>';
+      document.getElementById('pageStats').innerHTML = '<div class="empty-state">No data available yet</div>';
+      document.getElementById('recentActivity').innerHTML = '<div class="empty-state">No recent activity</div>';
+    }
+
+    function clearAnalytics() {
+      if (confirm('Are you sure you want to clear all analytics data? This cannot be undone.')) {
+        localStorage.removeItem('siteAnalytics');
+        location.reload();
+      }
+    }
+
+    // Load analytics on page load
+    loadAnalytics();
+
+    // Auto-refresh every 30 seconds
+    setInterval(loadAnalytics, 30000);
+  </script>
+</body>
+</html>
