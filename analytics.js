@@ -63,18 +63,18 @@
 
     // Track global hit counter using Abacus API
     try {
-      // Increment total site visits
-      fetch('https://abacus.jasoncameron.dev/hit/lotriet.github.io/total-visits')
+      // Increment total site visits (v2 - fresh counter)
+      fetch('https://abacus.jasoncameron.dev/hit/lotriet.github.io/v2-total-visits')
         .catch(err => console.log('Global counter unavailable'));
 
-      // Increment page-specific counter
+      // Increment page-specific counter (v2 - fresh counter)
       const pageKey = pagePath.replace(/\//g, '-').replace(/^-/, '') || 'home';
-      fetch(`https://abacus.jasoncameron.dev/hit/lotriet.github.io/page-${pageKey}`)
+      fetch(`https://abacus.jasoncameron.dev/hit/lotriet.github.io/v2-page-${pageKey}`)
         .catch(err => console.log('Page counter unavailable'));
 
-      // Increment country counter if available
+      // Increment country counter if available (v2 - fresh counter)
       if (locationData.countryCode !== 'XX') {
-        fetch(`https://abacus.jasoncameron.dev/hit/lotriet.github.io/country-${locationData.countryCode}`)
+        fetch(`https://abacus.jasoncameron.dev/hit/lotriet.github.io/v2-country-${locationData.countryCode}`)
           .catch(err => console.log('Country counter unavailable'));
       }
     } catch (e) {

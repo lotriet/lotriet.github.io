@@ -161,7 +161,7 @@
     // Load global statistics from Abacus API
     async function loadGlobalStats() {
       try {
-        const response = await fetch('https://abacus.jasoncameron.dev/get/lotriet.github.io/total-visits');
+        const response = await fetch('https://abacus.jasoncameron.dev/get/lotriet.github.io/v2-total-visits');
         if (response.ok) {
           const data = await response.json();
           document.getElementById('globalTotalHits').textContent = data.value || 0;
@@ -182,7 +182,7 @@
         // Fetch hit counts for each known country
         const promises = TRACKED_COUNTRIES.map(async country => {
           try {
-            const response = await fetch(`https://abacus.jasoncameron.dev/get/lotriet.github.io/country-${country.code}`);
+            const response = await fetch(`https://abacus.jasoncameron.dev/get/lotriet.github.io/v2-country-${country.code}`);
             if (response.ok) {
               const data = await response.json();
               if (data.value && data.value > 0) {
