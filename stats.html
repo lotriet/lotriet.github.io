@@ -111,30 +111,6 @@
   </div>
 
   <div class="stats-container">
-    <h2>📈 Google Analytics Live Data</h2>
-    <div id="gaLiveData">
-      <div class="stat-card" style="background: #4285f4;">
-        <h3>Active Users (Now)</h3>
-        <div class="number" id="gaActiveUsers">-</div>
-      </div>
-      <div class="stat-card" style="background: #34a853;">
-        <h3>Today's Page Views</h3>
-        <div class="number" id="gaPageViews">-</div>
-      </div>
-      <div class="stat-card" style="background: #fbbc04;">
-        <h3>Today's Sessions</h3>
-        <div class="number" id="gaSessions">-</div>
-      </div>
-      <div class="stat-card" style="background: #ea4335;">
-        <h3>Avg Session Duration</h3>
-        <div class="number" id="gaAvgDuration">-</div>
-      </div>
-    </div>
-    <p style="font-size: 12px; color: #6b7280; margin-top: 10px;">
-      Note: Live GA4 data requires API setup. <a href="https://analytics.google.com" target="_blank">View full data in Google Analytics</a>
-    </p>
-  </div>
-<div class="stats-container">
     <h2>🌍 Global Statistics (All Visitors)</h2>
     <div class="stat-card" style="background: #ef4444;">
       <h3>Global Total Hits</h3>
@@ -274,34 +250,6 @@
       loadGlobalStats();
       loadGlobalCountryStats();
     }, 30000);
-  </script>
-
-  <script>
-    // Google Analytics Live Data (Placeholder for API integration)
-    // Note: To display live GA4 data, you need to:
-    // 1. Set up Google Analytics Data API in Google Cloud Console
-    // 2. Create a service account with Analytics Viewer permissions
-    // 3. Use server-side API calls (cannot be done purely client-side for security)
-
-    // For now, we'll show placeholder data and link to the dashboard
-    // Real implementation would require a backend API endpoint
-
-    async function fetchGA4Data() {
-      // Placeholder - in production, this would call your backend API
-      // which would then call GA4 Data API with proper credentials
-
-      // For demonstration, we'll show that data is available in the dashboard
-      document.getElementById('gaActiveUsers').textContent = '→';
-      document.getElementById('gaPageViews').textContent = '→';
-      document.getElementById('gaSessions').textContent = '→';
-      document.getElementById('gaAvgDuration').textContent = '→';
-
-      // Update every 30 seconds
-      setTimeout(fetchGA4Data, 30000);
-    }
-
-    // Initialize on page load
-    fetchGA4Data();
   </script>
 </body>
 </html>
