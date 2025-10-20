@@ -1,0 +1,7 @@
+# CODEOWNERS file
+# This file defines who owns the code in this repository
+# Only the code owners can approve pull requests and make changes
+
+# Owner: Christo Lotriet
+# All files in the repository are owned by @lotriet
+* @lotriet
