@@ -36,4 +36,4 @@ This project is versioned with Git and hosted at [https://github.com/lotriet/emp
 
 This CV is designed to be both visually appealing and practical for sharing, printing, or exporting. It demonstrates not only the professional background of Christo Lotriet but also web development best practices in code organization and user experience.
 
-<!-- Testing Gravatar image update -->
+<!-- Gravatar configured with gclotriet@outlook.com -->
