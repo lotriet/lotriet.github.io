@@ -47,7 +47,7 @@ Welcome to my GitHub! I'm a passionate software developer with extensive experie
 - 🇺🇸 **Current**: Web Developer at Courthouse Computer Systems (2023-Present)
 - 🏦 **Previous**: Software Developer at Discovery Limited - Financial Services (2020-2022)
 - 🏥 **Healthcare**: Practice Management Systems at Med-e-Mass (2017-2020)
-- 📡 **Telecom**: High-performance data processing at LGR Telecommunications (2006-2011)
+- 🛡️ **Safety Systems**: Risk Management at NOSA (2015-2017)
 
 ### 🎓 Education & Certifications
 
