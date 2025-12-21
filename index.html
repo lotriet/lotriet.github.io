@@ -582,6 +582,24 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .content {
+    padding: 20px 15px;
+  }
+
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  .summary-text {
+    padding: 24px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+  }
+}
+
 /* Clean up inline styles - move to proper classes */
 .contact-link {
   color: white;
@@ -757,6 +775,7 @@ body {
   gap: 24px;
   width: 100%;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .skill-column {
