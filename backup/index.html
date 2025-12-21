@@ -13,7 +13,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
-    <title>Christo Lotriet - Software Developer - South Africa</title>
+    <title>Christo Lotriet - Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,11 +35,15 @@
     <div class="cv-container">
       <header class="header">
         <h1>Christo Lotriet</h1>
-        <h3>Software Developer | Enterprise Applications • Databases • Web</h3>
+        <h3>Software Developer — Enterprise Applications, Databases, Web</h3>
         <div class="contact-info">
           <div class="contact-item">
             <span>Location:</span>
-            <span>Relocating to South Africa (Currently in North Carolina, USA)</span>
+            <span
+              data-variant-us="North Carolina, USA"
+              data-variant-sa="Relocating to South Africa (Currently in North Carolina, USA)"
+              >North Carolina, USA</span
+            >
           </div>
           <div class="contact-item">
             <span>Email:</span>
@@ -76,7 +80,10 @@
           <h2>Summary</h2>
           <div class="summary-text">
             <p>
-              Full-stack developer with 10+ years of experience delivering public-sector systems and healthcare platforms. Strong proficiency in ASP.NET MVC/C#, multi-tier Delphi architecture, and database design across SQL Server, PostgreSQL, MySQL, and Oracle. Experienced with pragmatic Agile practices and governed releases. South African citizen available for immediate relocation and employment.
+              Full-stack developer with 10+ years of experience delivering public-sector systems and healthcare platforms. Strong proficiency in ASP.NET MVC/C#, multi-tier Delphi architecture, and database design across SQL Server, PostgreSQL, MySQL, and Oracle. Experienced with pragmatic Agile practices and governed releases.<span
+                data-variant-us=""
+                data-variant-sa=" South African citizen available for immediate relocation and employment."
+              ></span>
             </p>
           </div>
         </section>
@@ -87,7 +94,9 @@
             <div class="skill-column">
               <div class="skill-category">
                 <span class="skill-category-name">Languages:</span>
-                <span class="skill-items">C#, JavaScript, HTML5/CSS3, Delphi</span>
+                <span class="skill-items"
+                  >C#, JavaScript, HTML5/CSS3, Delphi</span
+                >
               </div>
               <div class="skill-category">
                 <span class="skill-category-name">Frameworks:</span>
@@ -95,13 +104,18 @@
               </div>
               <div class="skill-category">
                 <span class="skill-category-name">Tools:</span>
-                <span class="skill-items">Visual Studio, VS Code, Git, Jenkins, JIRA, Agile/Scrum, CI/CD</span>
+                <span class="skill-items"
+                  >Visual Studio, VS Code, Git, Jenkins, JIRA, Agile/Scrum,
+                  CI/CD</span
+                >
               </div>
             </div>
             <div class="skill-column">
               <div class="skill-category">
                 <span class="skill-category-name">Databases:</span>
-                <span class="skill-items">SQL Server, PostgreSQL, Oracle, MySQL</span>
+                <span class="skill-items"
+                  >SQL Server, PostgreSQL, Oracle, MySQL</span
+                >
               </div>
               <div class="skill-category">
                 <span class="skill-category-name">Cloud & AI:</span>
@@ -109,20 +123,59 @@
               </div>
               <div class="skill-category">
                 <span class="skill-category-name">Focus Areas:</span>
-                <span class="skill-items">Enterprise Web Applications, Database Design & Performance, Data Warehousing, Cross-functional Collaboration</span>
+                <span class="skill-items"
+                  >Enterprise Web Applications, Database Design & Performance<span
+                    data-variant-us=""
+                    data-variant-sa=", Data Warehousing"
+                  ></span
+                  >, Cross-functional Collaboration</span
+                >
               </div>
             </div>
           </div>
+        </section>
+
         <section class="section">
           <h2>Professional Experience</h2>
-
+                    <div class="job">
+                      <div class="job-header">
+                        <div>
+                          <div class="job-title">
+                            Freelance App Developer | Lotriflow & Client Projects
+                          </div>
+                          <div class="job-location">Remote</div>
+                        </div>
+                        <div class="job-date">Sep 2025 - Present</div>
+                      </div>
+                      <div class="job-description">
+                        <ul class="job-bullets">
+                          <li>
+                            Founded and developed <a href="https://www.lotriflow.com" target="_blank">Lotriflow.com</a>, a workflow automation platform for small businesses and teams, handling all aspects from architecture to deployment.
+                          </li>
+                          <li>
+                            Delivered custom web and mobile apps for clients in legal, consulting, and creative industries, including booking systems, dashboards, and integrations with third-party APIs.
+                          </li>
+                          <li>
+                            Provided end-to-end freelance services: requirements gathering, UX/UI design, coding, testing, deployment, and ongoing support.
+                          </li>
+                          <li>
+                            Technologies: JavaScript, C#, Node.js, Azure, SQL, REST APIs, HTML5/CSS3, and low-code/no-code tools.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
           <div class="job">
             <div class="job-header">
               <div>
                 <div class="job-title">
                   Courthouse Computer Systems | Web/Software Developer
                 </div>
-                <div class="job-location">Chapel Hill, North Carolina, USA</div>
+                <div class="job-location">
+                  Chapel Hill, North Carolina<span
+                    data-variant-us=""
+                    data-variant-sa=", USA"
+                  ></span>
+                </div>
               </div>
               <div class="job-date">Jan 2023 - Aug 2025</div>
             </div>
@@ -232,6 +285,8 @@
 
         </section>
 
+        <!-- Removed duplicate skills section to make CV more concise -->
+
         <section class="section">
           <h2>Education</h2>
           <div class="education-item">
@@ -254,25 +309,6 @@
               <span class="language-level">Native Speaker</span>
             </div>
           </div>
-          <style>
-            .languages {
-              display: flex;
-              flex-direction: column;
-              gap: 5px;
-            }
-            .language-item {
-              display: flex;
-              align-items: center;
-              gap: 10px;
-            }
-            .language-name {
-              font-weight: 600;
-              min-width: 80px;
-            }
-            .language-level {
-              color: #4a5568;
-            }
-          </style>
         </section>
       </div>
     </div>
