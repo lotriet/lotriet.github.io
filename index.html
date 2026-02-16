@@ -1,19 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google Analytics GA4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2SNEVHR7K"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q2SNEVHR7K"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Q2SNEVHR7K');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Q2SNEVHR7K");
     </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
-    <title>Christo Lotriet - Software Developer</title>
+    <title>
+      Christo Lotriet - Application Support Engineer | Production Systems | SQL
+      & Systems Troubleshooting
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,967 +29,991 @@
       rel="stylesheet"
     />
     <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.5;
-  color: #1a1a1a;
-  background: #fafafa;
-  min-height: 100vh;
-  padding: 24px;
-  font-size: 15px;
-}
-
-.site-nav {
-  max-width: 880px;
-  margin: 0 auto 15px;
-  text-align: center;
-  padding: 10px;
-  background: white;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-  border: 1px solid #e5e7eb;
-}
-
-.site-nav a {
-  color: #4f46e5;
-  text-decoration: none;
-  padding: 5px 10px;
-  margin: 0 5px;
-  font-weight: 500;
-}
-
-.site-nav a:hover {
-  text-decoration: underline;
-}
-
-.site-nav a.active {
-  color: #1f2937;
-  font-weight: 600;
-}
-
-.cv-container {
-  max-width: 880px;
-  margin: 0 auto;
-  background: white;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.04);
-  overflow: hidden;
-  border: 1px solid #e5e7eb;
-}
-
-.header {
-  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
-  color: white;
-  padding: 30px 40px;
-  text-align: center;
-  border-bottom: 3px solid #6366f1;
-}
-
-.header h1 {
-  font-size: 2em;
-  margin-bottom: 8px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.header h3 {
-  font-size: 1.05em;
-  font-weight: 500;
-  margin-bottom: 0;
-  opacity: 0.9;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-top: 16px;
-  font-size: 0.9em;
-  font-weight: 400;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  opacity: 0.95;
-}
-
-.contact-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  flex: 0 0 auto;
-}
-
-.contact-icon svg {
-  width: 16px;
-  height: 16px;
-  stroke: currentColor;
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.contact-item span:last-child {
-  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 2px 6px;
-  border-radius: 4px;
-  color: white !important;
-  -webkit-text-fill-color: white !important;
-}
-
-.phone-number {
-  color: white !important;
-  -webkit-text-fill-color: white !important;
-  text-decoration: none !important;
-  pointer-events: auto;
-}
-
-.content {
-  padding: 48px 40px;
-}
-
-.section {
-  margin-bottom: 48px;
-}
-
-.section h2 {
-  color: #1f2937;
-  font-size: 1.5em;
-  margin-bottom: 24px;
-  padding-bottom: 8px;
-  border-bottom: 2px solid #e5e7eb;
-  position: relative;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-
-.section h2::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 48px;
-  height: 2px;
-  background: #6366f1;
-}
-
-.summary-text {
-  font-size: 1em;
-  color: #374151;
-  line-height: 1.7;
-  background: #f9fafb;
-  padding: 32px;
-  border-radius: 4px;
-  border-left: 4px solid #6366f1;
-  font-weight: 400;
-}
-
-.objective-text {
-  font-size: 0.95em;
-  color: #374151;
-  line-height: 1.6;
-  background: #fefefe;
-  padding: 24px;
-  border-radius: 4px;
-  border-left: 4px solid #9ca3af;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.job {
-  margin-bottom: 32px;
-  padding: 0;
-  background: transparent;
-  border-radius: 0;
-  border-left: none;
-  transition: none;
-  border-bottom: 1px solid #e5e7eb;
-  padding-bottom: 32px;
-}
-
-.job:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.job:hover {
-  transform: none;
-  box-shadow: none;
-}
-
-.job-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-}
-
-.job-title {
-  font-size: 1.1em;
-  font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 4px;
-}
-
-.company {
-  font-size: 1em;
-  color: #6366f1;
-  font-weight: 500;
-  margin-bottom: 2px;
-}
-
-.job-date {
-  background: #f3f4f6;
-  color: #374151;
-  padding: 4px 12px;
-  border-radius: 4px;
-  font-size: 0.85em;
-  font-weight: 500;
-  border: 1px solid #e5e7eb;
-}
-
-.job-location {
-  color: #6b7280;
-  font-size: 0.9em;
-  margin-bottom: 8px;
-  font-weight: 400;
-}
-
-.job-description {
-  color: #374151;
-  line-height: 1.6;
-  font-size: 0.95em;
-  margin-top: 16px;
-  font-weight: 400;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 24px;
-}
-
-.skills-compact {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.skills-compact-row {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  line-height: 1.5;
-}
-
-.skills-compact-label {
-  min-width: 90px;
-  font-weight: 600;
-  color: #4f46e5;
-  font-size: 0.9em;
-  flex-shrink: 0;
-}
-
-.skills-compact-items {
-  color: #374151;
-  font-size: 0.9em;
-}
-
-.skill-category {
-  background: #fafafa;
-  padding: 20px;
-  border-radius: 4px;
-  border: 1px solid #e5e7eb;
-}
-
-.skill-category h4 {
-  color: #1f2937;
-  margin-bottom: 12px;
-  font-size: 0.9em;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.skill-tag {
-  background: #f3f4f6;
-  color: #374151;
-  padding: 4px 10px;
-  border-radius: 3px;
-  font-size: 0.8em;
-  font-weight: 500;
-  border: 1px solid #e5e7eb;
-}
-
-.education-item {
-  background: #fafafa;
-  padding: 24px;
-  border-radius: 4px;
-  border: 1px solid #e5e7eb;
-}
-
-.degree {
-  font-size: 1.05em;
-  font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 8px;
-}
-
-.university {
-  color: #3498db;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.education-date {
-  color: #666;
-  font-size: 0.9em;
-}
-
-.languages {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.language {
-  background: #f3f4f6;
-  color: #374151;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: 500;
-  border: 1px solid #e5e7eb;
-  font-size: 0.9em;
-}
-
-
-.export-btn-group {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin: 16px 0 8px;
-}
-
-.export-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 40px;
-  height: 40px;
-  padding: 0 12px;
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 999px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.export-btn .icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-}
-
-.export-btn .icon svg {
-  width: 20px;
-  height: 20px;
-  stroke: currentColor;
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.export-btn .btn-text {
-  max-width: 0;
-  opacity: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  margin-left: 0;
-  font-size: 0.72em;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  transition: max-width 0.2s ease, opacity 0.2s ease, margin-left 0.2s ease;
-}
-
-.export-btn:hover .btn-text,
-.export-btn:focus-visible .btn-text {
-  max-width: 120px;
-  opacity: 1;
-  margin-left: 8px;
-}
-
-.export-btn:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.8);
-  outline-offset: 2px;
-}
-
-.export-btn:hover {
-  background: rgba(255, 255, 255, 0.22);
-  border-color: rgba(255, 255, 255, 0.55);
-  transform: translateY(-1px);
-}
-
-.export-btn:active {
-  transform: translateY(0);
-}
-
-@media print {
-  body {
-    background: white !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    font-size: 12pt;
-    line-height: 1.4;
-  }
-
-  .export-btn-group {
-    display: none !important;
-  }
-
-  .portfolio-section {
-    display: none !important;
-  }
-
-  .cv-container {
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    margin: 0 !important;
-    max-width: none !important;
-    width: 100% !important;
-  }
-
-  .header {
-    background: #2c3e50 !important;
-    color: white !important;
-    padding: 30px !important;
-    margin: 0 !important;
-  }
-
-  .contact-info {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    text-align: center;
-  }
-
-  .contact-item {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .contact-item span:last-child,
-  .contact-item a {
-    background: transparent !important;
-    padding: 0 !important;
-    text-shadow: none !important;
-  }
-
-  .job:hover {
-    transform: none !important;
-    box-shadow: none !important;
-  }
-
-  .pdf-export-btn {
-    display: none !important;
-  }
-
-  .section {
-    page-break-inside: avoid;
-    break-inside: avoid;
-    margin-bottom: 25px;
-  }
-
-  .job {
-    page-break-inside: avoid;
-    break-inside: avoid;
-    margin-bottom: 20px;
-  }
-
-  .header {
-    page-break-after: avoid;
-  }
-
-  h2 {
-    page-break-after: avoid;
-    color: #2c3e50 !important;
-  }
-
-  .skill-tag {
-    background: #3498db !important;
-    color: white !important;
-  }
-
-  .job-date {
-    background: #3498db !important;
-    color: white !important;
-  }
-
-  .language {
-    background: #2c3e50 !important;
-    color: white !important;
-  }
-
-  /* Ensure colors are preserved */
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    padding: 30px 20px;
-  }
-
-  .header h1 {
-    font-size: 2em;
-  }
-
-  .contact-info {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .content {
-    padding: 30px 20px;
-  }
-
-  .job-header {
-    flex-direction: column;
-  }
-
-  .job-date {
-    align-self: flex-start;
-    margin-top: 10px;
-  }
-
-  .export-btn-group {
-    margin: 12px 0 6px;
-    gap: 8px;
-  }
-  .export-btn {
-    width: 36px;
-    height: 36px;
-    padding: 0 8px;
-  }
-  .btn-text {
-    max-width: 0;
-    opacity: 0;
-    margin-left: 0;
-  }
-
-  .portfolio-header {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    margin-bottom: 16px;
-  }
-
-  .portfolio-header h2 {
-      flex: none;
-      margin-bottom: 8px;
-  }
-
-  .portfolio-toggle {
-    align-self: flex-start;
-  }
-}
-
-@media (max-width: 480px) {
-  .content {
-    padding: 20px 15px;
-  }
-
-  .header h1 {
-    font-size: 1.8em;
-  }
-
-  .summary-text {
-    padding: 24px;
-  }
-
-  .skills-container {
-    flex-direction: column;
-  }
-}
-
-/* Clean up inline styles - move to proper classes */
-.contact-link {
-  color: white;
-  text-decoration: none;
-}
-
-.currently-learning-heading {
-  margin-top: 20px;
-}
-
-.azure-openai-pill {
-  background: #e0f2fe;
-  border-color: #0284c7;
-  color: #0284c7;
-}
-
-.skill-heading-secondary {
-  margin-top: 15px;
-}
-
-.professional-dev-description {
-  margin-top: 12px;
-  font-size: 0.9em;
-  color: #374151;
-  line-height: 1.5;
-}
-
-/* Languages section styles */
-.languages {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.language-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.language-name {
-  font-weight: 600;
-  min-width: 80px;
-}
-
-.language-level {
-  color: #4a5568;
-}
-
-/* Skills section improvements */
-.skills-modern {
-  margin-top: 20px;
-}
-
-.skills-simple {
-  margin-top: 15px;
-}
-
-.skill-category {
-  margin-bottom: 12px;
-  line-height: 1.6;
-  color: #374151;
-}
-
-.skill-category strong {
-  color: #1f2937;
-  font-weight: 600;
-  margin-right: 8px;
-}
-
-.skill-category.currently-learning {
-  margin-top: 16px;
-  padding: 12px 16px;
-  background: #f0f9ff;
-  border-left: 4px solid #0284c7;
-  border-radius: 4px;
-}
-
-.highlight {
-  color: #0284c7;
-  font-weight: 600;
-  background: #e0f2fe;
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-
-.skills-row {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 20px;
-}
-
-.skill-group {
-  flex: 1;
-}
-
-.skill-heading {
-  font-size: 15px;
-  margin: 0 0 10px;
-  color: #4f46e5;
-  font-weight: 600;
-}
-
-.skill-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.skill-pill {
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 4px 12px;
-  font-size: 13px;
-  display: inline-block;
-}
-
-/* Resume-specific styles */
-.resume-link {
-  color: #6366f1;
-  text-decoration: none;
-}
-
-.currently-learning-skills {
-  color: #0284c7;
-  font-weight: 500;
-}
-
-.professional-dev-note {
-  font-size: 0.9em;
-  color: #666;
-}
-
-/* Cross-Functional Capabilities section */
-.capabilities-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 15px;
-}
-
-.capability-item {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: 18px;
-  transition: box-shadow 0.2s ease;
-}
-
-.capability-item:hover {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.capability-item h4 {
-  margin: 0 0 10px 0;
-  color: #2d3748;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.capability-item p {
-  margin: 0;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #4a5568;
-}
-
-/* Skills container styles for consistent layout */
-.skills-container {
-  display: flex;
-  gap: 24px;
-  width: 100%;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.skill-column {
-  flex: 1;
-  min-width: 220px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-
-
-.skill-category {
-  margin-bottom: 0;
-  line-height: 1.4;
-  background: none;
-  border: none;
-  padding: 2px 0 2px 0;
-}
-
-.skill-category-name {
-  font-weight: 600;
-  min-width: 100px;
-  display: inline-block;
-  color: #4f46e5;
-  font-size: 0.95em;
-}
-
-.skill-items {
-  color: #374151;
-  font-size: 0.95em;
-}
-
-.portfolio-header {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.portfolio-header h2 {
-  margin-bottom: 0;
-  flex: 1;
-}
-
-.portfolio-content[hidden] {
-  display: none;
-}
-
-.portfolio-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #f3f4f6;
-  color: #374151;
-  border: 1px solid #e5e7eb;
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 0.8em;
-  cursor: pointer;
-}
-
-.portfolio-toggle:hover {
-  background: #fff;
-  border-color: #d1d5db;
-}
-
-.portfolio-toggle .toggle-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease;
-}
-
-.portfolio-toggle .toggle-icon svg {
-  width: 16px;
-  height: 16px;
-  stroke: currentColor;
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.portfolio-toggle[aria-expanded="true"] .toggle-icon {
-  transform: rotate(180deg);
-}
-
-.portfolio-section .portfolio-subtitle {
-  margin: 8px 0 16px;
-  font-size: 1.05em;
-  color: #374151;
-  font-weight: 600;
-}
-
-.portfolio-section .job-description p + p {
-  margin-top: 12px;
-}
-
-.portfolio-link {
-  color: #6366f1;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.portfolio-link:hover {
-  text-decoration: underline;
-}
-
-/* Collapsible job entries */
-.job.collapsible .job-description {
-  display: none;
-}
-
-.job.collapsible.open .job-description {
-  display: block;
-}
-
-.job-toggle {
-  margin-left: 12px;
-  background: #f3f4f6;
-  color: #374151;
-  border: 1px solid #e5e7eb;
-  padding: 4px 10px;
-  border-radius: 4px;
-  font-size: 0.8em;
-  cursor: pointer;
-}
-
-.job-toggle:hover {
-  background: #fff;
-  border-color: #d1d5db;
-}
-
-/* Collapsible entries in resume.html (list layout) */
-.res-toggle {
-  margin-left: 8px;
-  background: #f3f4f6;
-  color: #374151;
-  border: 1px solid #e5e7eb;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 0.8em;
-  cursor: pointer;
-}
-
-.res-toggle:hover {
-  background: #fff;
-  border-color: #d1d5db;
-}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          "Segoe UI",
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        line-height: 1.5;
+        color: #1a1a1a;
+        background: #fafafa;
+        min-height: 100vh;
+        padding: 24px;
+        font-size: 15px;
+      }
+
+      .site-nav {
+        max-width: 880px;
+        margin: 0 auto 15px;
+        text-align: center;
+        padding: 10px;
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+        border: 1px solid #e5e7eb;
+      }
+
+      .site-nav a {
+        color: #4f46e5;
+        text-decoration: none;
+        padding: 5px 10px;
+        margin: 0 5px;
+        font-weight: 500;
+      }
+
+      .site-nav a:hover {
+        text-decoration: underline;
+      }
+
+      .site-nav a.active {
+        color: #1f2937;
+        font-weight: 600;
+      }
+
+      .cv-container {
+        max-width: 880px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 2px;
+        box-shadow:
+          0 1px 3px rgba(0, 0, 0, 0.06),
+          0 8px 24px rgba(0, 0, 0, 0.04);
+        overflow: hidden;
+        border: 1px solid #e5e7eb;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+        color: white;
+        padding: 30px 40px;
+        text-align: center;
+        border-bottom: 3px solid #6366f1;
+      }
+
+      .header h1 {
+        font-size: 2em;
+        margin-bottom: 8px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+      }
+
+      .header h3 {
+        font-size: 1.05em;
+        font-weight: 500;
+        margin-bottom: 0;
+        opacity: 0.9;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 16px;
+        font-size: 0.9em;
+        font-weight: 400;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        opacity: 0.95;
+      }
+
+      .contact-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        flex: 0 0 auto;
+      }
+
+      .contact-icon svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .contact-item span:last-child {
+        text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 2px 6px;
+        border-radius: 4px;
+        color: white !important;
+        -webkit-text-fill-color: white !important;
+      }
+
+      .phone-number {
+        color: white !important;
+        -webkit-text-fill-color: white !important;
+        text-decoration: none !important;
+        pointer-events: auto;
+      }
+
+      .content {
+        padding: 48px 40px;
+      }
+
+      .section {
+        margin-bottom: 48px;
+      }
+
+      .section h2 {
+        color: #1f2937;
+        font-size: 1.5em;
+        margin-bottom: 24px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e5e7eb;
+        position: relative;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+
+      .section h2::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 48px;
+        height: 2px;
+        background: #6366f1;
+      }
+
+      .summary-text {
+        font-size: 1em;
+        color: #374151;
+        line-height: 1.7;
+        background: #f9fafb;
+        padding: 32px;
+        border-radius: 4px;
+        border-left: 4px solid #6366f1;
+        font-weight: 400;
+      }
+
+      .objective-text {
+        font-size: 0.95em;
+        color: #374151;
+        line-height: 1.6;
+        background: #fefefe;
+        padding: 24px;
+        border-radius: 4px;
+        border-left: 4px solid #9ca3af;
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      .job {
+        margin-bottom: 32px;
+        padding: 0;
+        background: transparent;
+        border-radius: 0;
+        border-left: none;
+        transition: none;
+        border-bottom: 1px solid #e5e7eb;
+        padding-bottom: 32px;
+      }
+
+      .job:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      .job:hover {
+        transform: none;
+        box-shadow: none;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+      }
+
+      .job-title {
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #1f2937;
+        margin-bottom: 4px;
+      }
+
+      .company {
+        font-size: 1em;
+        color: #6366f1;
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+
+      .job-date {
+        background: #f3f4f6;
+        color: #374151;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 0.85em;
+        font-weight: 500;
+        border: 1px solid #e5e7eb;
+      }
+
+      .job-location {
+        color: #6b7280;
+        font-size: 0.9em;
+        margin-bottom: 8px;
+        font-weight: 400;
+      }
+
+      .job-description {
+        color: #374151;
+        line-height: 1.6;
+        font-size: 0.95em;
+        margin-top: 16px;
+        font-weight: 400;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 24px;
+      }
+
+      .skills-compact {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .skills-compact-row {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        line-height: 1.5;
+      }
+
+      .skills-compact-label {
+        min-width: 90px;
+        font-weight: 600;
+        color: #4f46e5;
+        font-size: 0.9em;
+        flex-shrink: 0;
+      }
+
+      .skills-compact-items {
+        color: #374151;
+        font-size: 0.9em;
+      }
+
+      .skill-category {
+        background: #fafafa;
+        padding: 20px;
+        border-radius: 4px;
+        border: 1px solid #e5e7eb;
+      }
+
+      .skill-category h4 {
+        color: #1f2937;
+        margin-bottom: 12px;
+        font-size: 0.9em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .skill-tag {
+        background: #f3f4f6;
+        color: #374151;
+        padding: 4px 10px;
+        border-radius: 3px;
+        font-size: 0.8em;
+        font-weight: 500;
+        border: 1px solid #e5e7eb;
+      }
+
+      .education-item {
+        background: #fafafa;
+        padding: 24px;
+        border-radius: 4px;
+        border: 1px solid #e5e7eb;
+      }
+
+      .degree {
+        font-size: 1.05em;
+        font-weight: 600;
+        color: #1f2937;
+        margin-bottom: 8px;
+      }
+
+      .university {
+        color: #3498db;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      .education-date {
+        color: #666;
+        font-size: 0.9em;
+      }
+
+      .languages {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .language {
+        background: #f3f4f6;
+        color: #374151;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-weight: 500;
+        border: 1px solid #e5e7eb;
+        font-size: 0.9em;
+      }
+
+      .export-btn-group {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin: 16px 0 8px;
+      }
+
+      .export-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        height: 40px;
+        padding: 0 12px;
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        border-radius: 999px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .export-btn .icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+      }
+
+      .export-btn .icon svg {
+        width: 20px;
+        height: 20px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .export-btn .btn-text {
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-left: 0;
+        font-size: 0.72em;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        transition:
+          max-width 0.2s ease,
+          opacity 0.2s ease,
+          margin-left 0.2s ease;
+      }
+
+      .export-btn:hover .btn-text,
+      .export-btn:focus-visible .btn-text {
+        max-width: 120px;
+        opacity: 1;
+        margin-left: 8px;
+      }
+
+      .export-btn:focus-visible {
+        outline: 2px solid rgba(255, 255, 255, 0.8);
+        outline-offset: 2px;
+      }
+
+      .export-btn:hover {
+        background: rgba(255, 255, 255, 0.22);
+        border-color: rgba(255, 255, 255, 0.55);
+        transform: translateY(-1px);
+      }
+
+      .export-btn:active {
+        transform: translateY(0);
+      }
+
+      @media print {
+        body {
+          background: white !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          font-size: 12pt;
+          line-height: 1.4;
+        }
+
+        .export-btn-group {
+          display: none !important;
+        }
+
+        .portfolio-section {
+          display: none !important;
+        }
+
+        .cv-container {
+          box-shadow: none !important;
+          border-radius: 0 !important;
+          margin: 0 !important;
+          max-width: none !important;
+          width: 100% !important;
+        }
+
+        .header {
+          background: #2c3e50 !important;
+          color: white !important;
+          padding: 30px !important;
+          margin: 0 !important;
+        }
+
+        .contact-info {
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          text-align: center;
+        }
+
+        .contact-item {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .contact-item span:last-child,
+        .contact-item a {
+          background: transparent !important;
+          padding: 0 !important;
+          text-shadow: none !important;
+        }
+
+        .job:hover {
+          transform: none !important;
+          box-shadow: none !important;
+        }
+
+        .pdf-export-btn {
+          display: none !important;
+        }
+
+        .section {
+          page-break-inside: avoid;
+          break-inside: avoid;
+          margin-bottom: 25px;
+        }
+
+        .job {
+          page-break-inside: avoid;
+          break-inside: avoid;
+          margin-bottom: 20px;
+        }
+
+        .header {
+          page-break-after: avoid;
+        }
+
+        h2 {
+          page-break-after: avoid;
+          color: #2c3e50 !important;
+        }
+
+        .skill-tag {
+          background: #3498db !important;
+          color: white !important;
+        }
+
+        .job-date {
+          background: #3498db !important;
+          color: white !important;
+        }
+
+        .language {
+          background: #2c3e50 !important;
+          color: white !important;
+        }
+
+        /* Ensure colors are preserved */
+        * {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .header {
+          padding: 30px 20px;
+        }
+
+        .header h1 {
+          font-size: 2em;
+        }
+
+        .contact-info {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .content {
+          padding: 30px 20px;
+        }
+
+        .job-header {
+          flex-direction: column;
+        }
+
+        .job-date {
+          align-self: flex-start;
+          margin-top: 10px;
+        }
+
+        .export-btn-group {
+          margin: 12px 0 6px;
+          gap: 8px;
+        }
+        .export-btn {
+          width: 36px;
+          height: 36px;
+          padding: 0 8px;
+        }
+        .btn-text {
+          max-width: 0;
+          opacity: 0;
+          margin-left: 0;
+        }
+
+        .portfolio-header {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 100%;
+          margin-bottom: 16px;
+        }
+
+        .portfolio-header h2 {
+          flex: none;
+          margin-bottom: 8px;
+        }
+
+        .portfolio-toggle {
+          align-self: flex-start;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .content {
+          padding: 20px 15px;
+        }
+
+        .header h1 {
+          font-size: 1.8em;
+        }
+
+        .summary-text {
+          padding: 24px;
+        }
+
+        .skills-container {
+          flex-direction: column;
+        }
+      }
+
+      /* Clean up inline styles - move to proper classes */
+      .contact-link {
+        color: white;
+        text-decoration: none;
+      }
+
+      .currently-learning-heading {
+        margin-top: 20px;
+      }
+
+      .azure-openai-pill {
+        background: #e0f2fe;
+        border-color: #0284c7;
+        color: #0284c7;
+      }
+
+      .skill-heading-secondary {
+        margin-top: 15px;
+      }
+
+      .professional-dev-description {
+        margin-top: 12px;
+        font-size: 0.9em;
+        color: #374151;
+        line-height: 1.5;
+      }
+
+      /* Languages section styles */
+      .languages {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .language-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .language-name {
+        font-weight: 600;
+        min-width: 80px;
+      }
+
+      .language-level {
+        color: #4a5568;
+      }
+
+      /* Skills section improvements */
+      .skills-modern {
+        margin-top: 20px;
+      }
+
+      .skills-simple {
+        margin-top: 15px;
+      }
+
+      .skill-category {
+        margin-bottom: 12px;
+        line-height: 1.6;
+        color: #374151;
+      }
+
+      .skill-category strong {
+        color: #1f2937;
+        font-weight: 600;
+        margin-right: 8px;
+      }
+
+      .skill-category.currently-learning {
+        margin-top: 16px;
+        padding: 12px 16px;
+        background: #f0f9ff;
+        border-left: 4px solid #0284c7;
+        border-radius: 4px;
+      }
+
+      .highlight {
+        color: #0284c7;
+        font-weight: 600;
+        background: #e0f2fe;
+        padding: 2px 8px;
+        border-radius: 4px;
+      }
+
+      .skills-row {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 20px;
+      }
+
+      .skill-group {
+        flex: 1;
+      }
+
+      .skill-heading {
+        font-size: 15px;
+        margin: 0 0 10px;
+        color: #4f46e5;
+        font-weight: 600;
+      }
+
+      .skill-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .skill-pill {
+        background: #f3f4f6;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 4px 12px;
+        font-size: 13px;
+        display: inline-block;
+      }
+
+      /* Resume-specific styles */
+      .resume-link {
+        color: #6366f1;
+        text-decoration: none;
+      }
+
+      .currently-learning-skills {
+        color: #0284c7;
+        font-weight: 500;
+      }
+
+      .professional-dev-note {
+        font-size: 0.9em;
+        color: #666;
+      }
+
+      /* Cross-Functional Capabilities section */
+      .capabilities-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 15px;
+      }
+
+      .capability-item {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 18px;
+        transition: box-shadow 0.2s ease;
+      }
+
+      .capability-item:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .capability-item h4 {
+        margin: 0 0 10px 0;
+        color: #2d3748;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.3;
+      }
+
+      .capability-item p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #4a5568;
+      }
+
+      /* Skills container styles for consistent layout */
+      .skills-container {
+        display: flex;
+        gap: 24px;
+        width: 100%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .skill-column {
+        flex: 1;
+        min-width: 220px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .skill-category {
+        margin-bottom: 0;
+        line-height: 1.4;
+        background: none;
+        border: none;
+        padding: 2px 0 2px 0;
+      }
+
+      .skill-category-name {
+        font-weight: 600;
+        min-width: 100px;
+        display: inline-block;
+        color: #4f46e5;
+        font-size: 0.95em;
+      }
+
+      .skill-items {
+        color: #374151;
+        font-size: 0.95em;
+      }
+
+      .portfolio-header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .portfolio-header h2 {
+        margin-bottom: 0;
+        flex: 1;
+      }
+
+      .portfolio-content[hidden] {
+        display: none;
+      }
+
+      .portfolio-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #f3f4f6;
+        color: #374151;
+        border: 1px solid #e5e7eb;
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-size: 0.8em;
+        cursor: pointer;
+      }
+
+      .portfolio-toggle:hover {
+        background: #fff;
+        border-color: #d1d5db;
+      }
+
+      .portfolio-toggle .toggle-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease;
+      }
+
+      .portfolio-toggle .toggle-icon svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .portfolio-toggle[aria-expanded="true"] .toggle-icon {
+        transform: rotate(180deg);
+      }
+
+      .portfolio-section .portfolio-subtitle {
+        margin: 8px 0 16px;
+        font-size: 1.05em;
+        color: #374151;
+        font-weight: 600;
+      }
+
+      .portfolio-section .job-description p + p {
+        margin-top: 12px;
+      }
+
+      .portfolio-link {
+        color: #6366f1;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .portfolio-link:hover {
+        text-decoration: underline;
+      }
+
+      /* Collapsible job entries */
+      .job.collapsible .job-description {
+        display: none;
+      }
+
+      .job.collapsible.open .job-description {
+        display: block;
+      }
+
+      .job-toggle {
+        margin-left: 12px;
+        background: #f3f4f6;
+        color: #374151;
+        border: 1px solid #e5e7eb;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 0.8em;
+        cursor: pointer;
+      }
+
+      .job-toggle:hover {
+        background: #fff;
+        border-color: #d1d5db;
+      }
+
+      /* Collapsible entries in resume.html (list layout) */
+      .res-toggle {
+        margin-left: 8px;
+        background: #f3f4f6;
+        color: #374151;
+        border: 1px solid #e5e7eb;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 0.8em;
+        cursor: pointer;
+      }
+
+      .res-toggle:hover {
+        background: #fff;
+        border-color: #d1d5db;
+      }
     </style>
   </head>
   <body>
     <div class="cv-container">
       <header class="header">
         <h1>Christo Lotriet</h1>
-        <h3>Software Developer — Enterprise Apps, Database Systems, Web & Mobile</h3>
+        <h3>
+          Application Support Engineer | Production Systems | SQL & Systems
+          Troubleshooting
+        </h3>
         <div class="export-btn-group" aria-label="Export options">
-          <button class="export-btn pdf-export-btn" type="button" aria-label="Print or save as PDF" title="Print/PDF">
+          <button
+            class="export-btn pdf-export-btn"
+            type="button"
+            aria-label="Print or save as PDF"
+            title="Print/PDF"
+          >
             <span class="icon" aria-hidden="true">
               <svg viewBox="0 0 24 24">
                 <polyline points="6 9 6 2 18 2 18 9"></polyline>
-                <path d="M6 18H4a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <path
+                  d="M6 18H4a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+                ></path>
                 <rect x="6" y="14" width="12" height="8"></rect>
               </svg>
             </span>
             <span class="btn-text">Print/PDF</span>
           </button>
-          <button class="export-btn word-export-btn" type="button" aria-label="Download Word document" title="Word">
+          <button
+            class="export-btn word-export-btn"
+            type="button"
+            aria-label="Download Word document"
+            title="Word"
+          >
             <span class="icon" aria-hidden="true">
               <svg viewBox="0 0 24 24">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="8" y1="13" x2="16" y2="13"></line>
                 <line x1="8" y1="17" x2="16" y2="17"></line>
@@ -1000,12 +1032,25 @@ body {
               </svg>
             </span>
             <span>Location:</span>
-            <span>North Carolina, USA</span>
+            <span>Cary, NC</span>
           </div>
           <div class="contact-item">
             <span class="contact-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+            </span>
+            <span>Phone:</span>
+            <span class="phone-number">(919) 454-7856</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
             </span>
@@ -1017,30 +1062,36 @@ body {
               >gclotriet@outlook.com</a
             >
           </div>
-          <div class="contact-item">
-            <span class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M10 13a5 5 0 0 1 0-7l1-1a5 5 0 0 1 7 7l-1 1"></path>
-                <path d="M14 11a5 5 0 0 1 0 7l-1 1a5 5 0 0 1-7-7l1-1"></path>
-              </svg>
-            </span>
-            <span>LinkedIn:</span>
-            <a
-              href="https://linkedin.com/in/gclotriet"
-              class="contact-link"
-              data-plain-text="linkedin.com/in/gclotriet"
-              >linkedin.com/in/gclotriet</a
-            >
-          </div>
         </div>
       </header>
 
       <div class="content">
         <section class="section">
-          <h2>Summary</h2>
+          <h2>Professional Summary</h2>
           <div class="summary-text">
             <p>
-              Full-stack developer with 10+ years of experience delivering public-sector systems and healthcare platforms. Strong proficiency in ASP.NET MVC/C#, multi-tier Delphi architecture, and database design across SQL Server, PostgreSQL, and MySQL. Experienced with pragmatic Agile practices and governed releases.
+              Full-stack developer with extensive production support experience
+              in mission-critical healthcare and government systems. Proven
+              track record of diagnosing complex issues, optimizing database
+              performance, and maintaining operational reliability in highly
+              regulated environments. Strong expertise in SQL troubleshooting,
+              incident investigation, data integrity validation, and cross-team
+              coordination.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Core Competencies</h2>
+          <div
+            class="summary-text"
+            style="border-left-color: #9ca3af; background: #fefefe"
+          >
+            <p>
+              Application Support | Production Troubleshooting | Root Cause
+              Analysis | SQL Debugging | Database Performance Tuning | Data
+              Validation & Integrity | Defect Resolution | Role-Based Access
+              Control | Deployment Management | Healthcare & Government Systems
             </p>
           </div>
         </section>
@@ -1049,28 +1100,25 @@ body {
           <h2>Technical Skills</h2>
           <div class="skills-compact">
             <div class="skills-compact-row">
-              <span class="skills-compact-label">Languages:</span>
-              <span class="skills-compact-items">C#, JavaScript, HTML5/CSS3, Delphi</span>
+              <span class="skills-compact-label">Languages & Frameworks:</span>
+              <span class="skills-compact-items"
+                >C# | .NET Framework | ASP.NET MVC | JavaScript | HTML5 |
+                Delphi</span
+              >
             </div>
             <div class="skills-compact-row">
-              <span class="skills-compact-label">Frameworks:</span>
-              <span class="skills-compact-items">ASP.NET MVC, REST APIs, Capacitor</span>
+              <span class="skills-compact-label">Databases & Data:</span>
+              <span class="skills-compact-items"
+                >MySQL | PostgreSQL | SQL Server | Firebird | Query Optimization
+                | Indexing | Stored Procedures | Data Validation</span
+              >
             </div>
             <div class="skills-compact-row">
-              <span class="skills-compact-label">Databases:</span>
-              <span class="skills-compact-items">SQL Server, PostgreSQL, MySQL</span>
-            </div>
-            <div class="skills-compact-row">
-              <span class="skills-compact-label">Cloud & AI:</span>
-              <span class="skills-compact-items">Azure, Azure OpenAI Service</span>
-            </div>
-            <div class="skills-compact-row">
-              <span class="skills-compact-label">Tools:</span>
-              <span class="skills-compact-items">Visual Studio, VS Code, Git, Jenkins, JIRA</span>
-            </div>
-            <div class="skills-compact-row">
-              <span class="skills-compact-label">Methods:</span>
-              <span class="skills-compact-items">Agile/Scrum, CI/CD</span>
+              <span class="skills-compact-label">Tools & Platforms:</span>
+              <span class="skills-compact-items"
+                >Visual Studio | Git | JIRA | Jenkins | QlikView | Agile/Scrum |
+                CI/CD</span
+              >
             </div>
           </div>
         </section>
@@ -1080,53 +1128,62 @@ body {
           <div class="job">
             <div class="job-header">
               <div>
-                <div class="job-title">
-                  Founder & Mobile App Developer | Lotriflow
-                </div>
+                <div class="job-title">Technical Mentorship & Consulting</div>
+                <div class="company">Remote</div>
                 <div class="job-location">Remote</div>
               </div>
-              <div class="job-date">Sep 2025 - Current</div>
+              <div class="job-date">Sep 2025 - Present</div>
             </div>
             <div class="job-description">
-              <ul class="job-bullets">
-                <li>
-                  Founded <a href="https://www.lotriflow.com" target="_blank">Lotriflow</a>, my product brand for future apps and releases.
-                </li>
-                <li>
-                  Launched <a href="https://www.lotriflow.com/quit/" target="_blank">Lotriflow Quit</a>, a smoking cessation app, on the iOS App Store and Google Play Store.
-                </li>
-                <li>
-                  Led end-to-end delivery from product definition and UX/UI to full-stack development, deployment, and maintenance.
-                </li>
-                <li>
-                  Stack: JavaScript, REST APIs, HTML/CSS, Capacitor.
-                </li>
-              </ul>
+              <p>
+                Provided technical guidance and architectural advice to
+                early-stage development teams.
+              </p>
             </div>
           </div>
           <div class="job">
             <div class="job-header">
               <div>
                 <div class="job-title">
-                  Courthouse Computer Systems | Web/Software Developer
+                  Full-Stack Developer & Production Support Engineer
                 </div>
-                <div class="job-location">Chapel Hill, North Carolina</div>
+                <div class="company">Courthouse Computer Systems</div>
+                <div class="job-location">Chapel Hill, NC</div>
               </div>
-              <div class="job-date">Jan 2023 - Aug 2025</div>
+              <div class="job-date">Jan 2023 - Sep 2025</div>
             </div>
             <div class="job-description">
+              <p>
+                Delivered document-scanning operations system for Courthouse
+                scanning team, partnering with operations lead to track scanning
+                productivity and performance metrics. System also exposed
+                external functionality to county partners. Managed system
+                through development, testing, production launch, and post-launch
+                support.
+              </p>
               <ul class="job-bullets">
                 <li>
-                  Built document-scanning system with staged workflow pipeline (inspection → prep → scanning → review), replacing spreadsheet tracking with automated, auditable process providing real-time visibility into throughput and stage progress.
+                  Delivered scanning operations tracking system with extensive
+                  productivity and performance metrics, enabling real-time
+                  visibility into scanning operations
                 </li>
                 <li>
-                  Implemented probate case management with role-based workflows, strict validation, end-to-end audit trails, and automated receipts/certificates for estates, executors, and filings.
+                  Optimized database query performance from 20+ seconds to 2
+                  seconds through query analysis and strategic indexing,
+                  improving scanning team productivity
                 </li>
                 <li>
-                  Developed Veterans Honor Portal with business enrollment, admin authentication, search/filters, and Excel export capabilities.
+                  Conducted data quality validation as part of testing process
+                  before external user access
                 </li>
                 <li>
-                  Co-developed KISS tax collection system (pre-release) with public property tax search, online payments, and sheriff reconciliation/reporting.
+                  Designed and validated role-based access controls to prevent
+                  unauthorized document access
+                </li>
+                <li>
+                  Managed deployments across dev, UAT, and production;
+                  coordinated with QA and development teams to ensure stable
+                  releases
                 </li>
               </ul>
             </div>
@@ -1136,25 +1193,47 @@ body {
             <div class="job-header">
               <div>
                 <div class="job-title">
-                  Discovery Limited | Software Application Developer
+                  Software Developer – Medical Scheme Rate & Policy Systems
+                </div>
+                <div class="company">
+                  Discovery Limited (Discovery Health Medical Scheme)
                 </div>
                 <div class="job-location">Johannesburg, South Africa</div>
               </div>
               <div class="job-date">Jul 2020 - Dec 2022</div>
             </div>
             <div class="job-description">
+              <p>
+                Developed and maintained rate calculation and policy management
+                systems for South Africa's largest open medical scheme, serving
+                hundreds of thousands of members. Served as part of deployment
+                team managing weekly rate change releases with zero tolerance
+                for error.
+              </p>
               <ul class="job-bullets">
                 <li>
-                  Maintained enterprise healthcare systems through defect fixes and enhancement development using Delphi and C#.
+                  <strong>Weekly Deployment Support:</strong> Participated in
+                  weekly Friday rate change deployments affecting hundreds of
+                  thousands of scheme members; coordinated across teams to
+                  ensure smooth, error-free releases
                 </li>
                 <li>
-                  Developed SQL scripts and stored procedures to improve system stability and performance.
+                  <strong>Defect Resolution:</strong> Investigated and fixed
+                  high-priority defects in rate calculation and policy
+                  management systems; diagnosed issues at both application and
+                  database levels using SQL debugging
                 </li>
                 <li>
-                  Managed multi-environment deployments (dev/test/UAT/prod) using Jenkins CI/CD with production triage, deployment scripts, and change documentation.
+                  <strong>Multi-Environment Testing:</strong> Assisted with
+                  coordinated deployments across dev/test/UAT/production;
+                  performed validation testing to ensure rate accuracy and
+                  policy integrity before releases
                 </li>
                 <li>
-                  Participated in Agile ceremonies including daily stand-ups, peer testing, buddy testing, and code reviews to ensure release quality.
+                  <strong>Cross-Team Collaboration:</strong> Collaborated with
+                  QA team and other developers; conducted peer code reviews to
+                  identify logic errors in financial calculations before
+                  production deployment
                 </li>
               </ul>
             </div>
@@ -1163,24 +1242,40 @@ body {
           <div class="job">
             <div class="job-header">
               <div>
-                <div class="job-title">Med-e-Mass (Altron TMT) | Software Applications Developer</div>
+                <div class="job-title">Healthcare Systems Developer</div>
+                <div class="company">Med-e-Mass</div>
                 <div class="job-location">Pretoria, South Africa</div>
               </div>
               <div class="job-date">Oct 2017 - Jun 2020</div>
             </div>
             <div class="job-description">
+              <p>
+                Developed and supported multi-tier healthcare practice
+                management system with PostgreSQL backend serving medical
+                practices across South Africa.
+              </p>
               <ul class="job-bullets">
                 <li>
-                  Delivered HealthSoft e-Scripting system for electronic prescriptions, sick notes, and referral letters with patient-history storage and re-issue capability.
+                  <strong>Database Performance & Optimization:</strong>
+                  Diagnosed and resolved database performance issues using
+                  strategic indexing, query optimization, and stored procedure
+                  tuning; improved system responsiveness
                 </li>
                 <li>
-                  Developed multi-tier practice management modules for scheduling, billing, patient records, and reporting using desktop front end with service layer architecture.
+                  <strong>Data Integration & Support:</strong> Built and
+                  maintained SQL and REST/SOAP integrations for patient data,
+                  e-prescriptions, and medical records; troubleshot integration
+                  failures
                 </li>
                 <li>
-                  Built REST API endpoints for cross-module integration and external partners; integrated via MySQL and SOAP services.
+                  <strong>Compliance & Data Handling:</strong> Ensured compliant
+                  handling of patient data through structured validation,
+                  role-based access controls, and controlled release processes
                 </li>
                 <li>
-                  Optimized PostgreSQL performance through stored procedures and indexing for high-traffic paths; participated in Agile sprint planning, daily stand-ups, and retrospectives.
+                  <strong>Agile Development:</strong> Participated in Agile
+                  sprint cycles focused on defect resolution and system
+                  reliability improvements
                 </li>
               </ul>
             </div>
@@ -1189,27 +1284,93 @@ body {
           <div class="job">
             <div class="job-header">
               <div>
-                <div class="job-title">NOSA | Software Applications Developer</div>
-                <div class="job-location">Centurion/Pretoria, South Africa</div>
+                <div class="job-title">Safety Systems Developer</div>
+                <div class="company">NOSA</div>
+                <div class="job-location">Centurion, South Africa</div>
               </div>
               <div class="job-date">Aug 2015 - Sep 2017</div>
             </div>
             <div class="job-description">
+              <p>
+                Developed features for occupational health and safety risk
+                management system serving enterprise clients in regulated
+                industries.
+              </p>
               <ul class="job-bullets">
                 <li>
-                  Developed MIRACLES occupational health and safety platform covering incidents, risks, and training management for workplace safety compliance.
+                  <strong>Database Design & Reporting:</strong> Designed
+                  database schemas and routines to support reliable safety
+                  metrics reporting and audit requirements
                 </li>
                 <li>
-                  Delivered Generic Risk Assessment module end-to-end including data model, business logic, and user interface.
+                  <strong>Analytics & QlikView Reports:</strong> Created
+                  QlikView dashboards and reports surfacing incidents, risks,
+                  and compliance trends for executive visibility and
+                  decision-making
                 </li>
                 <li>
-                  Created QlikView dashboards and reports surfacing incidents, risk observations, and compliance trends with Excel export capabilities.
-                </li>
-                <li>
-                  Designed database schemas optimized for reporting and analysis of workplace safety metrics.
+                  <strong>Data Support:</strong> Supported data validation and
+                  compliance reporting for internal and external stakeholders
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">Earlier Experience</div>
+                <div class="company">Various Companies</div>
+                <div class="job-location">South Africa</div>
+              </div>
+              <div class="job-date">Prior to 2015</div>
+            </div>
+            <div class="job-description">
+              <p>
+                Extensive background in software development and systems
+                engineering across telecommunications, healthcare,
+                automotive/logistics, inventory management, and sports betting
+                industries. Early career includes IT support and hardware
+                troubleshooting, providing foundation in systems diagnostics and
+                problem-solving.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Key Achievements</h2>
+          <div
+            class="summary-text"
+            style="border-left-color: #10b981; background: #f0fdf4"
+          >
+            <ul class="job-bullets" style="margin: 0; padding-left: 20px">
+              <li>
+                Delivered scanning operations tracking system with extensive
+                productivity and performance metrics, enabling real-time
+                visibility into scanning operations
+              </li>
+              <li>
+                Reduced database query latency by 90% (20+ seconds → 2 seconds)
+                through query optimization and indexing
+              </li>
+              <li>
+                Conducted data quality validation as part of testing process
+                before external user access
+              </li>
+              <li>
+                Managed weekly rate change deployments for medical scheme
+                affecting hundreds of thousands of members
+              </li>
+              <li>
+                Prevented unauthorized data access through access control
+                validation and security testing
+              </li>
+              <li>
+                Ensured 100% audit compliance in regulated healthcare and
+                government systems
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -1231,75 +1392,6 @@ body {
             </button>
           </div>
           <div class="portfolio-content" id="portfolio-content" hidden>
-            <h3 class="portfolio-subtitle">Featured Projects</h3>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-title">
-                    RAGAgent – Retrieval-Augmented Generation API
-                  </div>
-                  <div class="job-location">Open Source Project</div>
-                </div>
-                <div class="job-date">2025</div>
-              </div>
-              <div class="job-description">
-                <p>
-                  A .NET 8 Web API that combines Azure AI Search and Azure OpenAI to
-                  deliver intelligent question-answering over custom documents.
-                  Features include configurable mock/real service modes, dependency
-                  injection, and robust architecture diagrams.
-                </p>
-                <p>
-                  <strong>Key Technologies:</strong> .NET 8, C#, Azure OpenAI, Azure
-                  AI Search, ASP.NET Core, Docker
-                </p>
-                <p>
-                  <a
-                    href="https://ragapi-webapp-bfc5ekgpd0cdeah5.canadacentral-01.azurewebsites.net/"
-                    target="_blank"
-                    rel="noopener"
-                    class="portfolio-link"
-                    >Live Demo</a
-                  >
-                </p>
-              </div>
-            </div>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-title">
-                    JobFair Site – .NET Micro API Demo
-                  </div>
-                  <div class="job-location">Open Source Project</div>
-                </div>
-                <div class="job-date">2025</div>
-              </div>
-              <div class="job-description">
-                <p>
-                  A modern .NET 8 Web API demo app featuring async/await patterns,
-                  SQLite database, retry policy with Polly, and full REST API
-                  endpoints. Designed for rapid technical showcases, live demos, and
-                  professional portfolios. Includes interactive Swagger UI, Azure
-                  deployment scripts, and an AI assistant.
-                </p>
-                <p>
-                  <strong>Key Technologies:</strong> .NET 8, C#, ASP.NET Core, Entity
-                  Framework Core, SQLite, Polly, Swagger, Azure, GitHub Actions
-                </p>
-                <p>
-                  <a
-                    href="https://lotriet-jobfair-site-d4gvegbgaybne9cq.canadacentral-01.azurewebsites.net/"
-                    target="_blank"
-                    rel="noopener"
-                    class="portfolio-link"
-                    >Live Demo</a
-                  >
-                </p>
-              </div>
-            </div>
-
             <h3 class="portfolio-subtitle">Code Snippets & Utilities</h3>
 
             <div class="job">
@@ -1314,17 +1406,20 @@ body {
               </div>
               <div class="job-description">
                 <p>
-                A practical Python script that solves common CSV data quality problems.
-                Automatically removes duplicates, handles missing values, trims whitespace,
-                standardizes date formats, and cleans column headers. Features comprehensive
-                error handling and processing statistics, with no external dependencies.
+                  A practical Python script that solves common CSV data quality
+                  problems. Automatically removes duplicates, handles missing
+                  values, trims whitespace, standardizes date formats, and
+                  cleans column headers. Features comprehensive error handling
+                  and processing statistics, with no external dependencies.
                 </p>
                 <p>
-                  <strong>Key Features:</strong> Duplicate detection, missing value handling,
-                  date standardization, header cleaning, encoding issue resolution, batch processing support
+                  <strong>Key Features:</strong> Duplicate detection, missing
+                  value handling, date standardization, header cleaning,
+                  encoding issue resolution, batch processing support
                 </p>
                 <p>
-                  <strong>Technologies:</strong> Python 3, Standard Library (csv, argparse, re, datetime)
+                  <strong>Technologies:</strong> Python 3, Standard Library
+                  (csv, argparse, re, datetime)
                 </p>
                 <p>
                   <a
@@ -1342,11 +1437,17 @@ body {
 
         <section class="section">
           <h2>Education</h2>
-          <div class="education-item">
-            <div class="degree">BSc Computer Science</div>
-            <div class="university">
-              University of South Africa (UNISA), Pretoria
+          <div class="education-item" style="margin-bottom: 16px">
+            <div class="degree">
+              Bachelor of Science, Computer Science & Information Systems
             </div>
+            <div class="university">University of South Africa (UNISA)</div>
+          </div>
+          <div class="education-item">
+            <div class="degree">
+              National Diploma, Electrical Engineering (Digital Technology)
+            </div>
+            <div class="university">Technikon Pretoria</div>
           </div>
         </section>
 
